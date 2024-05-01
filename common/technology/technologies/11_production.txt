@@ -1,0 +1,35 @@
+sericulture = { #古代技艺
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/sericulture.dds"
+	category = production
+	can_research = no
+	
+	modifier = {
+		building_silk_plantation_throughput_add = 0.13 #丝绸种植园吞吐量
+		building_glassworks_throughput_add = 0.13
+
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+arc_welding = { #电弧焊
+	# Unlocks Arc Welding Shipbuilding PM in Shipyards
+	# Unlocks Very Fast PM in Construction Camps
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/arc_welding.dds"
+	category = production
+	modifier = {
+		country_max_weekly_construction_progress_add = 20
+	}
+	unlocking_technologies = {
+		electric_arc_process
+		pneumatic_tools
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}

@@ -1,0 +1,140 @@
+﻿DIPLOMACY = {
+	c:RUS = { #华约
+		create_diplomatic_pact = {
+			country = c:MGL
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:POL
+			type = protectorate #保护国
+		}	
+		create_diplomatic_pact = {
+			country = c:CZH
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:HUN
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:ROM
+			type = protectorate #保护国
+		}	
+		create_diplomatic_pact = {
+			country = c:BUL
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:ALB
+			type = protectorate #保护国
+		}
+	}
+	c:SPA = {
+		create_diplomatic_pact = {
+			country = c:CUB
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:PHI
+			type = puppet
+		}	
+	}		
+	c:CHI = {
+		create_diplomatic_pact = {
+			country = c:TIB
+			type = dominion #自治领
+		}			
+	}
+	c:USA = {
+		create_diplomatic_pact = {
+			country = c:JAP #日本
+			type = protectorate #保护国
+		}
+	}
+	c:GBR = {
+		create_diplomatic_pact = {
+			country = c:SIK #锡金
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:BIC #印度
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:CAN #加拿大
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:TRI #的黎波里塔尼亚
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:AST #澳大利亚
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:NZL #新西兰
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:SAF #南非
+			type = dominion #自治领
+		}
+	}
+	c:DAI = {
+		create_diplomatic_pact = {
+			country = c:CAM
+			type = tributary
+		}
+	}
+	c:SIA = {
+		create_diplomatic_pact = {
+			country = c:CHP
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:CMI
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:LUA
+			type = tributary
+		}		
+	}
+	c:EGY = {
+		create_diplomatic_pact = {
+			country = c:HDJ
+			type = tributary
+		}
+	}
+	c:DEI = {
+		create_diplomatic_pact = {
+			country = c:YOG
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SRK
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:JMB
+			type = puppet
+		}	
+		create_diplomatic_pact = {
+			country = c:SMB
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:PON
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BNJ
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:TID
+			type = puppet
+		}
+	}
+}

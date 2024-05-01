@@ -1,0 +1,18 @@
+murder_of_rural_leaders = { #谋杀乡村民众领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding4 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_rural_folk #乡村民众
+			}
+			add_modifier = {
+			name = murder_funding4 #谋杀经费
+			years = 5	
+		}
+	}
+}

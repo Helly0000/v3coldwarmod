@@ -1,0 +1,29 @@
+legal_system_reform = {
+	is_shown = {
+		has_law = law_type:law_islamic_law_system #有伊斯兰法系法律	
+		NOT = { has_law = law_type:law_case_law_system } #没有海洋法系法律	
+		NOT = { has_law = law_type:law_continental_law_system } #没有大陆法系法律	
+		NOT = { has_modifier = advanced_legal_system } #没有先进的法律体系修正
+		OR = { 
+			this = c:BUL
+			this = c:CYP
+			this = c:ARM
+		}
+	}
+	possible = {
+		has_law = law_type:law_islamic_law_system #有伊斯兰法系法律		
+		NOT = { has_law = law_type:law_case_law_system } #没有海洋法系法律	
+		NOT = { has_law = law_type:law_continental_law_system } #没有大陆法系法律	
+	}
+	
+	when_taken = {
+		activate_law = law_type:law_case_law_system #改变法律为海洋法系
+		add_modifier = {
+			name = advanced_legal_system #先进的法律体系
+			years = 5			
+		}
+	}
+	ai_chance = {
+		base = 114514
+	}
+}

@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:ROM = {
+		create_character = {
+			#彼得鲁·格罗查
+			first_name = "Petro"
+			last_name = "Grocha"
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			birth_date = 1884.12.7
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}		
+	}
+}

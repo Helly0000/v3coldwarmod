@@ -1,0 +1,12 @@
+l_simp_chinese:
+ building_great_canal_BEIJING:0 "大运河"
+ pmg_base_building_great_canal:0 "船舶"
+ pmg_passenger_ship_lock:0 "船闸"
+ pmg_ownership_capital_building_great_canal:0 "所有制"
+ pm_pm_junk:0 "漕船"
+ pm_reinforced_junk:0 "蒸汽漕船"
+ pm_steam_ships:0 "运河蒸汽货轮"
+ pm_diesel_ships:0 "运河柴油货轮"
+ pm_ship_flash_lock:0 "漕工"
+ pm_steam_lock:0 "蒸汽船闸"
+ pm_electric_lock:0 "电力升船机"

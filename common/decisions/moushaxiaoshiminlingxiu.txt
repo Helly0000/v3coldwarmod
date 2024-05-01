@@ -1,0 +1,18 @@
+murder_of_a_small_town_leader = { #谋杀小市民领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding7 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie #小市民
+			}
+			add_modifier = {
+			name = murder_funding7 #谋杀经费
+			years = 5	
+		}
+	}
+}

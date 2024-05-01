@@ -1,0 +1,58 @@
+namespace = joi_flavor_expand
+
+joi_flavor_expand.1 = {#签署三皇同盟
+	type = country_event
+	placement = root
+	title = joi_flavor_expand.1.t
+	desc = joi_flavor_expand.1.d
+	flavor = joi_flavor_expand.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:AUS = {
+            save_scope_as = AUS_scope
+        }
+        c:PRU = {
+            save_scope_as = PRU_scope
+        }
+        c:RUS = {
+            save_scope_as = RUS_scope
+        }
+	}
+
+	option = {
+
+		name = joi_flavor_expand.1.a
+		custom_tooltip = {
+			text = refuse_dreikaiserabkommen_tt
+			set_global_variable = some_one_stop_dreikaiserabkommen
+			}
+		}	
+		
+	option = {
+
+		name = joi_flavor_expand.1.b
+		change_relations = {
+			country = c:RUS 
+			value = 20
+		}
+		change_relations = {
+			country = c:GER 
+			value = 20
+		}
+		change_relations = {
+			country = c:AUS 
+			value = 20
+		}
+	}
+}

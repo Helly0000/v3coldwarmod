@@ -1,0 +1,14 @@
+﻿hf_KOR_subject_CHI = {
+	# Before 1882 flags with chinese dragons
+	# Earliest attested so historical flag at start
+	
+	pattern = "pattern_solid.tga"
+	color1 = "joseon_red" #red
+
+	colored_emblem = {
+		texture = "hf_joseon_emblem.dds"
+		color1 = "joseon_yellow" #blue
+		color2 = "white" #green
+		instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}
+}

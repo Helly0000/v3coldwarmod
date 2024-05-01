@@ -1,0 +1,52 @@
+﻿COUNTRIES = {
+	c:CHI = {
+		effect_starting_technology_tier_3_tech = yes
+		add_technology_researched = electrical_generation
+		add_technology_researched = electric_railway
+		add_technology_researched = military_aviation #军用航空
+		add_technology_researched = urban_planning
+		add_technology_researched = sericulture
+		add_technology_researched = academia
+		add_technology_researched = law_enforcement
+                add_technology_researched = atmospheric_engine
+		
+		set_market_capital = STATE_GUANGDONG	
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_tenant_farmers #佃农
+		activate_law = law_type:law_multi_party_cooperation_system #一党制国家
+		activate_law = law_type:law_women_own_property #有产妇女
+		activate_law = law_type:law_censorship #出版物审查
+		activate_law = law_type:law_dedicated_police #专职警察部队
+		activate_law = law_type:law_private_schools #私立学校
+		activate_law = law_type:law_private_health_insurance #私人医疗保险
+		activate_law = law_type:law_poor_laws #济贫法
+		activate_law = law_type:law_per_capita_based_taxation #人均税制
+		activate_law = law_type:law_professional_army #职业军队
+		activate_law = law_type:law_total_separation #完全分离
+		activate_law = law_type:law_serfdom_banned
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_interventionism #经济干预
+		activate_law = law_type:law_unrestricted_labor #无限制劳动
+		
+		set_government_wage_level = high
+
+		set_institution_investment_level = {
+			institution = institution_police #执法
+			level = 1
+		}
+		add_modifier = {
+			name = anti_japanese_injury #抗日之伤
+		}
+		add_modifier = {
+			name = the_peoples_liberation_army_controls_half_of_the_country #解放军掌握半壁江山
+		}
+		add_modifier = {
+			name = military_science_assistance_from_the_united_states #来自美国的军科援助
+		}
+		add_modifier = {
+			name = ununified_china #未统一的中国
+		}
+	}
+}

@@ -1,0 +1,14 @@
+attract_small_citizens = { #拉拢小市民
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtaining_support_from_small_citizens } #没有获得小市民支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtaining_support_from_small_citizens #获得小市民支持
+			years = 5	
+		}
+	}
+}

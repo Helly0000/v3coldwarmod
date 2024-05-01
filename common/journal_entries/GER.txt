@@ -1,0 +1,61 @@
+﻿a_fragile_empire = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_internal_affairs
+
+	complete = { #成功条件
+		OR = { 
+			has_law = law_type:law_racial_segregation
+			has_law = law_type:law_cultural_exclusion
+			has_law = law_type:law_multicultural
+		}
+	}
+	on_complete = { #如果成功
+		trigger_event = {
+			id = 
+		}	
+	}
+
+	fail = { #失败条件
+			has_law = law_type:law_ethnostate
+	}
+
+	on_fail = { #如果失败
+		trigger_event = {
+			id =  
+		}	
+	}
+
+	on_timeout = { #超时
+		trigger_event = {
+			id =  
+		}	
+	}
+
+	timeout = 9125
+   	 should_be_pinned_by_default = yes
+}
+
+reclaim_asia_minor = { #收复小亚细亚
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		custom_tooltip = {
+			text = reclaim_asia_minor_tt
+			any_scope_state = {
+				state_region = {
+					is_homeland = cu:turkish
+				}
+				count >= 10
+			}
+		}
+	}
+
+	on_complete = {
+		add_modifier = victory_cheer #胜利欢呼
+	}
+   	 should_be_pinned_by_default = yes
+	weight = 20
+}

@@ -1,0 +1,16 @@
+﻿l_simp_chinese:
+ building_opium_plantation_lens_option: "扩建$building_opium_plantation$"
+ building_pollution_treatment_plant:0 "污染处理厂" 
+ building_pollution_treatment_plant_lens_option:0 "扩建$ building_pollution_treatment_plant$"
+ building_xukong_logging:0 "人造木材厂" 
+ building_xukong_logging_lens_option:0 "扩建$ building_xukong_logging$"
+ building_xukong_oil:0 "人工合成油厂" 
+ building_xukong_oil_lens_option:0 "扩建$building_xukong_oil$"
+ building_xukong_rubber:0 "人工合成橡胶厂" 
+ building_xukong_rubber_lens_option:0 "扩建$building_xukong_rubber$"
+
+ railway:0 "铁路"
+ pmg_synthetic_wood:0 "合成木材"
+ building_entertainment_venues: "娱乐场所"
+ building_entertainment_venues_lens_option: "扩建$building_entertainment_venues$"
+ pmg_entertainment_venues:0 "娱乐场所"

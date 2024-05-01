@@ -1,0 +1,59 @@
+﻿COUNTRIES = {
+	c:FRA = {
+		set_next_election_date = 1950.2.1
+		
+		effect_starting_technology_tier_1_tech = yes
+
+		set_tax_level = medium
+		
+		add_taxed_goods = g:wine
+		
+		# Laws
+		activate_law = law_type:law_presidential_republic #总统共和制
+		activate_law = law_type:law_freedom_of_conscience #信仰自由
+		activate_law = law_type:law_elected_bureaucrats #选举官僚制
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_multicultural
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_serfdom_banned
+  		activate_law = law_type:law_proportional_taxation #比例税制
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_dedicated_police
+            	activate_law = law_type:law_public_health_insurance
+            	activate_law = law_type:law_womens_suffrage
+            	activate_law = law_type:law_universal_suffrage
+		activate_law = law_type:law_poor_laws
+           	activate_law = law_type:law_compulsory_primary_school
+            	activate_law = law_type:law_8_hour_working_system
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 3
+		}
+
+		ig:ig_landowners = { # Victor de Broglie was Prime Minister until February 22, 1836
+			add_ruling_interest_group = yes
+		}
+		
+		ig:ig_industrialists = {
+			add_ruling_interest_group = yes
+		}		
+		
+		ig:ig_devout = { 
+			set_interest_group_name = ig_catholic_church 
+		}
+
+		ig:ig_intelligentsia = {
+			set_ig_suppression = yes
+		}
+	}
+}

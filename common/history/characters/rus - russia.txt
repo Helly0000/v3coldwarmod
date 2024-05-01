@@ -1,0 +1,177 @@
+﻿CHARACTERS = {
+	c:RUS = {
+		create_character = {
+			# “慈父”斯大林
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_ruler
+			first_name = Joseph
+			last_name = Stalin
+			historical = yes
+			culture=cu:georgian #格鲁吉亚
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1878.12.18
+			traits = { #特质
+				strong #健硕
+				charismatic #魅力四射
+				inspirational_orator #鼓舞人心的演说家
+				brave
+				ambitious
+				bigoted
+                                experienced_political_operator
+			}
+		}
+
+		create_character = {
+			#莫洛托夫
+			first_name = Vyacheslav·Mikhaylovich
+			last_name = Molotov
+			birth_date = 1890.3.9
+			ig_leader = yes			
+			historical = yes
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				masterful_diplomat #外交大师
+				brave #勇敢
+                                                                    bandit
+			}
+		}
+
+		create_character = {
+			#朱可夫
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_5
+			first_name = Georgy·Konstantinovich
+			last_name = Zhukov
+			birth_date = 1896.12.1
+			ig_leader = yes
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				direct
+				persistent
+				expert_offensive_planner #熟练的进攻策划师
+                                                                    defense_in_depth_specialist
+                                                                    expert_artillery_commander
+			}
+		}
+
+		create_character = {
+			#赫鲁晓夫
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_5
+			first_name = Nikita·Sergeyevich
+			last_name = Khrushchev
+			culture=cu:ukrainian #乌克兰
+			religion = rel:atheist #无神论
+			birth_date = 1894.4.17
+			ig_leader = yes
+			historical = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				hedonist #享乐主义者
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
+			}
+		}
+
+		create_character = {
+			#贝利亚
+			is_general = yes
+			hq = region_caucasus #高加索战区总部
+			commander_rank = commander_rank_5
+			first_name = Lavrenti·Pavlovich
+			last_name = Berial
+			historical = yes
+			culture=cu:georgian #格鲁吉亚
+			religion = rel:atheist #无神论
+			birth_date = 1899.3.29
+			ig_leader = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				cruel #残暴
+				reserved
+				ambitious #雄心勃勃
+				tactful #圆滑
+			}
+		}
+
+		create_character = {
+			#列夫·达维多维奇·米哈伊洛夫，斯大林格勒拖拉机厂厂长
+			first_name = Lev·Davydovich
+			last_name = Mikhailov
+			birth_date = 1878.12.18
+			ig_leader = yes
+			interest_group = ig_industrialists #企业家
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				brave
+			}
+		}
+		
+		create_character = { #苏联General谢苗·米哈伊洛维奇·布琼尼
+			is_general = yes
+			first_name = Semyon·Mikhailovich
+			last_name = Budyonny
+			birth_date = 1883.4.25
+			hq = region_dnieper
+			commander_rank = commander_rank_5
+			historical = yes
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				expert_offensive_planner
+                                                                    pillager
+				surveyor
+                                                                    traditionalist_commander
+			}
+		}
+		
+		create_character = { #克利缅特·叶夫列莫维奇·伏罗希洛夫
+			is_general = yes
+			first_name = Clemente·Yevremovich
+			last_name = Voroshilov
+			birth_date = 1881.1.23
+			hq = region_poland
+			commander_rank = commander_rank_5
+			historical = yes
+			culture=cu:ukrainian #乌克兰
+			religion = rel:atheist #无神论
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				expert_defensive_strategist
+				charismatic #魅力四射
+				trench_rat
+				masterful_diplomat #外交大师，克利缅特·叶夫列莫维奇·伏罗希洛夫同志是伟大苏联人民的代表，我们深信，他的访问一定会进一步增进中苏两国人民的伟大友谊。并且有利于促进世界和平和人类进步的崇高事业。
+				tactful
+			}
+		}
+		
+		create_character = { #苏联Admiral库兹涅佐夫
+			is_admiral = yes
+			first_name = Nikolai·Grassimovich
+			last_name = kuznetsov
+			birth_date = 1902.7.24
+			hq = region_dnieper
+			commander_rank = commander_rank_5
+			historical = yes
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+			 	expert_naval_commander #海军指挥专家
+				dockyard_master
+				innovative #创新精神
+				brave #勇敢
+			 }
+		 }
+	}
+}

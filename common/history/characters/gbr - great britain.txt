@@ -1,0 +1,316 @@
+﻿CHARACTERS = {
+	c:GBR = {
+		create_character = {
+			first_name = George_VI
+			last_name = Winsdor
+			ruler = yes
+			noble = yes
+			birth_date = 1895.12.14
+			dna = dna_king_leopold_01
+			culture = cu:british
+			interest_group = ig_intelligentsia
+			ideology = ideology_royalist
+			traits = {
+				 masterful_diplomat
+                                                                     firebrand
+                                                                     expert_political_operator
+			}
+		}	
+	
+		create_character = {
+			first_name = Elizabeth_Mary
+			last_name = Winsdor
+			heir = yes
+			female = yes
+			noble = yes
+			birth_date = 1926.4.21
+			dna = dna_queen_maria
+			culture = cu:british
+			interest_group = ig_intelligentsia
+			ideology = ideology_feminist
+			traits = {
+				innovative
+                                                                    firebrand
+                                                                    experienced_political_operator				
+			}
+		}
+
+		create_character = {
+			first_name = Clement_Richard
+			last_name = Attlee
+			age = 53
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_social_democrat
+			traits = {
+				tactful
+                                                                    masterful_diplomat
+			}
+		}
+
+		create_character = {
+		                 first_name = Winston
+		     last_name = Churchill
+		    culture = cu:british
+		    female = no
+		    ig_leader = yes
+		    religion = protestant
+		    ideology = ideology_jingoist_leader
+		    interest_group = ig_industrialists
+		    birth_date = 1874.11.30
+		    traits = {
+		        expert_political_operator
+		        inspirational_orator
+		        firebrand
+                                          masterful_diplomat
+                                          brave
+		    }
+		}
+
+		create_character = {
+			first_name = Geoffrey_Francis
+			last_name = Fisher
+			age = 59
+			ig_leader = yes
+			interest_group = ig_devout
+			ideology = ideology_reformer
+			traits = {
+				pious
+                                                                    reserved
+			}
+		}
+
+		create_character = {
+			first_name = Harry
+			last_name = Pollitt
+			age = 56
+			ig_leader = yes
+			interest_group = ig_trade_unions
+			ideology = ideology_communist
+			traits = {
+				basic_diplomat
+                                                                    romantic
+			}
+		}
+
+		create_character = {
+			is_general = yes
+			first_name =Bernard
+			last_name = Montgomery
+			age = 59
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+                                                   hq = region_england
+                                                   commander_rank = commander_rank_5
+			traits = {
+				plains_commander
+                                                                    trench_rat
+                                                                    expert_defensive_strategist
+                                                                    stalwart_defender
+			}
+		}
+
+		create_character = {
+			first_name = Rab
+			last_name = Butler
+			age = 44
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_social_democrat
+			traits = {
+				expert_political_operator
+                                                                    direct
+			}
+		}
+
+		create_character = {
+			first_name = Maxwell_Fyfe
+			last_name = David
+			birth_date = 1900.5.29
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_radical
+			traits = {
+				ambitious
+				meticulous
+			}
+		}
+
+		create_character = {
+			first_name = Derick_Heathcoat
+			last_name = Amory
+			age = 47
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_radical
+			traits = {
+				imperious
+			}
+		}
+
+		create_character = { # Sea
+			is_admiral = yes
+			first_name = Andrew
+			last_name = Cunningham
+			interest_group = ig_intelligentsia
+			hq = region_nile_basin
+			commander_rank = commander_rank_5
+			age = 53
+			traits = {
+				expert_offensive_planner
+				expert_naval_commander
+				expert_convoy_raider
+			}
+                                                   #安德鲁·坎宁安，皇家海军元帅，地中海舰队司令，塔兰托海战以一敌三大胜，被誉为”地中海之狮“
+		}
+
+		create_character = { # Sea
+			is_admiral = yes
+			first_name = John
+			last_name = Tovey
+			interest_group = ig_armed_forces
+			age = 61
+			hq = region_england
+			commander_rank = commander_rank_5
+			traits = {
+				direct
+				expert_naval_commander
+                                                                    dockyard_master	
+			}
+			#约翰·托维，皇家海军本土舰队司令，击沉俾斯麦号
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Louis
+			last_name = Mountbatten
+			interest_group = ig_intelligentsia
+			age = 46
+			hq = region_north_sea_coast
+			commander_rank = commander_rank_5
+			traits = {
+				expert_artillery_commander
+				expert_offensive_planner
+                                                                    basic_naval_commander
+			}
+			#路易斯·蒙巴顿，亚太舰队司令，盟军联合作战司令
+		}
+
+		create_character = { # Sea
+			is_admiral = yes
+			first_name = Sir_James
+			last_name = Somerville
+			interest_group = ig_armed_forces
+			age = 54
+			hq = region_indochina
+			commander_rank = commander_rank_5
+			traits = {
+				expert_naval_commander
+                                                                    dockyard_master
+                                                                    direct
+			}
+			# 萨默维尔爵士，皇家海军北海舰队司令
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Harold
+			last_name = Alexander
+			interest_group = ig_industrialists
+			ideology = ideology_royalist #保皇主义者
+			age = 55
+			hq = region_south_india
+			commander_rank = commander_rank_5
+			traits = {
+				brave
+                        plains_commander
+                        expert_offensive_planner
+			}
+			#哈罗德·亚历山大，二战北非军区盟军总司令，指挥突尼斯战役有功而被封“突尼斯的亚历山大勋爵”
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = Archibald
+			last_name = Wavell
+			interest_group = ig_industrialists
+			age = 63
+			hq = region_indochina
+			commander_rank = commander_rank_5
+			traits = {
+				scarred
+                                                                    expert_defensive_strategist
+                                                                    romantic
+                                                                    expert_artillery_commander
+			}
+
+		}
+
+		create_character = {
+			is_general = yes
+			first_name = William
+			last_name = Platt
+			interest_group = ig_intelligentsia
+			age = 51
+			hq = region_niger
+			commander_rank = commander_rank_5
+			traits = {
+				forest_commander
+				resupply_commander
+                                                                    experienced_defensive_strategist
+			}
+
+		}
+
+		create_character = { # Sea
+			is_admiral = yes
+			first_name = Charles
+			last_name = Morton_Forbes
+			interest_group = ig_intelligentsia
+			age = 56
+			hq = region_north_sea_coast
+			commander_rank = commander_rank_5
+			traits = {
+				brave
+                                                                    expert_naval_commander
+                                                                    traditionalist_commander
+			}
+
+		}
+
+		create_character = { 
+			is_admiral = yes
+			first_name = Henry
+			last_name = Maitland_Wilson
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			birth_date = 1891.9.5
+			hq = region_england
+			commander_rank = commander_rank_5
+			traits = {
+				dockyard_master
+				expert_naval_commander
+				wrathful
+			}
+
+		}
+
+		create_character = { 
+                                                   #马岛战争英军指挥官,因指挥若定被誉为"撒切尔夫人的骑士".此时正在新加坡服役
+			is_admiral = yes
+			first_name = Leach
+			last_name = Henry_Conyers
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			birth_date = 1923.11.18
+			hq = region_indonesia
+			commander_rank = commander_rank_1
+			traits = {
+				brave
+				basic_naval_commander
+                                                                    charismatic
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+activate_resolution_to_murder_interest_group_leaders = { #启用谋杀利益集团领袖决议
+	is_shown = {
+			is_ai = no
+			NOT = { has_modifier = activate_resolution_to_murder_interest_group_leaders } #没有谋杀利益集团领袖修正
+	}
+	possible = {	
+	}
+	when_taken = {
+			add_modifier = {
+			name = activate_resolution_to_murder_interest_group_leaders #谋杀利益集团领袖
+		}
+	}
+}
+
+resolution_to_close_the_murder_of_interest_group_leaders = { #关闭谋杀利益集团领袖决议
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+	}
+	when_taken = {
+		remove_modifier = activate_resolution_to_murder_interest_group_leaders
+	}
+}

@@ -1,0 +1,24 @@
+﻿CHARACTERS = {
+	c:SWE = {
+		create_character = {
+			#古斯塔夫五世
+			first_name = "Gustav_V"
+			last_name = "Bernadotte"
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1858.6.16
+			dna = dna_king_karl_14
+			culture=cu:french
+    			religion = rel:protestant
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				ambitious 
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}	
+	}
+}

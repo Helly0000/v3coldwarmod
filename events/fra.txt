@@ -1,0 +1,121 @@
+﻿namespace = fra
+
+fra.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = fra.1.t
+	desc = fra.1.d
+	flavor = fra.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/before_the_battle"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		game_date >= 1882.1.1
+	}
+
+	option = {
+		name = fra.1.a
+		default_option = yes
+		create_character = {
+			#儒勒·布吕奈
+			historical = yes
+			is_general = yes
+			first_name = Jules1
+			last_name = Brune
+			birth_date = 1838.1.2
+			hq = region_rhine
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_jingoist_leader #沙文主义者
+			traits = {
+				expert_artillery_commander #熟练的炮兵指挥官
+				ambitious #雄心勃勃
+				brave #勇敢
+			}
+		}
+	}
+	option = {
+		name = fra.1.b
+		create_character = {
+			#乔治·克列孟梭
+			historical = yes
+			is_agitator = yes #煽动者
+			first_name = George
+			last_name = Clemenceau
+			birth_date = 1841.9.28
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_radical #激进主义者
+			traits = {
+				direct #直率
+				persistent #执着
+				expert_political_operator #政治运作专家
+			}
+		}
+		create_character = {
+			#儒勒·布吕奈
+			historical = yes
+			is_agitator = yes #煽动者
+			first_name = Jules1
+			last_name = Brune
+			birth_date = 1838.1.2
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_jingoist_leader #沙文主义者
+			traits = {
+				expert_artillery_commander #熟练的炮兵指挥官
+				ambitious #雄心勃勃
+				brave #勇敢
+			}
+		}
+	}
+}
+
+fra.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = fra.2.t
+	desc = fra.2.d
+	flavor = fra.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/before_the_battle"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+		game_date >= 1849.1.1
+	}
+	option = {
+		name = fra.2.a
+		create_character = {
+			#阿历克西·德·托克维尔
+			historical = yes
+			is_agitator = yes #煽动者
+			first_name = Alexi
+			last_name = de_Tocqueville
+			birth_date = 1805.7.20
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				literary #文学家
+				honorable #体面
+				basic_political_operator #政治运作者
+			}
+		}
+	}
+}

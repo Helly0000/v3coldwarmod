@@ -1,0 +1,20 @@
+continuation_of_Stalinism = {
+
+	group = je_group_internal_affairs
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	possible = { #激活条件
+	}
+	complete = { #完成条件
+		game_date >= 1954.6.26
+	}
+    on_complete = {
+		add_modifier = {
+			name = stalinism #斯大林主义
+			years = -1
+		}
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

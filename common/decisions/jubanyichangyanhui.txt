@@ -1,0 +1,14 @@
+hold_a_banquet = { #举办一场宴会
+	is_shown = {
+			is_ai = no
+	}
+	possible = {	
+			NOT = { has_modifier = banquet } #没有宴会修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = banquet #宴会
+			years = 5	
+		}
+	}
+}

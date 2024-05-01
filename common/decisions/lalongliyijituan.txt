@@ -1,0 +1,24 @@
+activate_resolution_to_attract_interest_groups = { #启用拉拢利益集团决议
+	is_shown = {
+			is_ai = no
+			NOT = { has_modifier = activate_resolution_to_attract_interest_groups } #没有拉拢利益集团修正
+	}
+	possible = {	
+	}
+	when_taken = {
+			add_modifier = {
+			name = activate_resolution_to_attract_interest_groups #拉拢利益集团
+		}
+	}
+}
+
+resolution_to_close_and_win_over_interest_groups = { #关闭拉拢利益集团决议
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+	}
+	when_taken = {
+		remove_modifier = activate_resolution_to_attract_interest_groups
+	}
+}

@@ -1,0 +1,18 @@
+banking_system_reform = {
+	is_shown = {
+		NOT = { has_law = law_type:law_Joint_stock_bank } #没有股份制银行法律	
+		has_technology_researched = banking
+		game_date < 1836.2.1
+	}
+	possible = {
+		NOT = { has_law = law_type:law_Joint_stock_bank } #没有股份制银行法律	
+		has_technology_researched = banking
+	}
+	
+	when_taken = {
+		activate_law = law_type:law_Joint_stock_bank #改变法律为股份制银行
+	}
+	ai_chance = {
+		base = 114514
+	}
+}

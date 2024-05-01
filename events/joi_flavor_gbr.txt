@@ -1,0 +1,3215 @@
+namespace = joi_flavor_gbr
+
+joi_flavor_gbr.1 = {#不列颠治世
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.1.t
+	desc = joi_flavor_gbr.1.d
+	flavor = joi_flavor_gbr.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = {
+			name = british_empire_stability
+			value = 0
+		}
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.1.a
+		add_journal_entry = {
+			type = british_empire_ireland
+		}
+
+		add_journal_entry = {
+			type = british_empire_canada
+		}
+
+		add_journal_entry = {
+			type = british_empire_australia
+		}
+
+		add_journal_entry = {
+			type = british_empire_india
+		}
+
+		add_journal_entry = {
+			type = british_empire_aferica
+		}
+
+			add_modifier = {
+				name = rule_britannia
+				months = -1				
+		}
+	}
+}
+
+joi_flavor_gbr.2 = {#帝国会议
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.2.t
+	desc = joi_flavor_gbr.2.d
+	flavor = joi_flavor_gbr.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	add_loyalists = {
+			value = 0.25
+		}
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.2.a
+		remove_modifier = rule_britannia
+		add_modifier = {
+				name = rise_of_british_empire
+				months = -1				
+		}
+		add_modifier = {
+				name = department_empire
+				months = -1				
+		}
+		add_primary_culture = cu:irish
+		add_primary_culture = cu:anglo_canadian
+		add_primary_culture = cu:franco_canadian
+		add_primary_culture = cu:boer
+		add_primary_culture = cu:australian
+	}
+}
+
+joi_flavor_gbr.3 = {#1887殖民地会议
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.3.t
+	desc = joi_flavor_gbr.3.d
+	flavor = joi_flavor_gbr.3.f
+
+	duration = 1
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+				every_country = {
+			limit = {
+				country_rank < rank_value:great_power			
+				OR = {
+						country_has_primary_culture = cu:british
+						country_has_primary_culture = cu:anglo_canadian
+						country_has_primary_culture = cu:franco_canadian
+						country_has_primary_culture = cu:australian
+						country_has_primary_culture = cu:aborigine
+						country_has_primary_culture = cu:maori
+						country_has_primary_culture = cu:boer
+					}
+					is_subject = yes							
+				NOT = {
+					THIS = ROOT
+				}			
+		}
+		root = { annex_with_incorporation = prev }
+	}
+}
+
+	option = {
+		name = joi_flavor_gbr.3.a
+		add_modifier = {
+				name = empire_dominion
+				months = -1				
+		}
+		hidden_effect = {
+			create_country = {
+				tag = SAF
+				origin = this
+				state = s:STATE_CAPE_COLONY.region_state:GBR
+				on_created = {
+				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_racial_segregation
+				activate_law = law_type:law_frontier_colonization
+				activate_law = law_type:law_interventionism
+				activate_law = law_type:law_landed_voting
+				activate_law = law_type:law_local_police
+				activate_law = law_type:law_no_social_security
+				activate_law = law_type:law_no_home_affairs
+				}
+			}
+		create_country = {
+				tag = CAN
+				origin = this
+				state = s:STATE_ONTARIO.region_state:GBR
+				on_created = {
+				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_cultural_exclusion
+				activate_law = law_type:law_frontier_colonization
+				activate_law = law_type:law_interventionism
+				activate_law = law_type:law_census_voting
+				activate_law = law_type:law_local_police
+				activate_law = law_type:law_free_trade
+				activate_law = law_type:law_no_social_security
+				activate_law = law_type:law_no_home_affairs
+				}
+			}
+		create_country = {
+				tag = BIC
+				origin = this
+				state = s:STATE_DELHI.region_state:GBR
+				on_created = {
+				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_racial_segregation
+				activate_law = law_type:law_no_colonial_affairs
+				activate_law = law_type:law_interventionism
+				activate_law = law_type:law_oligarchy
+				activate_law = law_type:law_local_police
+				activate_law = law_type:law_free_trade
+				activate_law = law_type:law_no_social_security
+				activate_law = law_type:law_no_home_affairs
+				activate_law = law_type:law_no_workers_rights
+				activate_law = law_type:law_no_womens_rights 
+				activate_law = law_type:law_appointed_bureaucrats
+				activate_law = law_type:law_tenant_farmers
+				activate_law = law_type:law_no_health_system
+				activate_law = law_type:law_no_schools
+				add_primary_culture = cu:bengali
+				add_modifier = {
+				name = india_adm
+				months = -1				
+				}	
+				add_modifier = {
+				name = master_of_india
+				months = -1				
+				}	
+			}
+		}
+		create_country = {
+				tag = AST
+				origin = this
+				state = s:STATE_NEW_SOUTH_WALES.region_state:GBR
+				on_created = {
+				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_cultural_exclusion
+				activate_law = law_type:law_frontier_colonization
+				activate_law = law_type:law_interventionism
+				activate_law = law_type:law_census_voting
+				activate_law = law_type:law_local_police
+				activate_law = law_type:law_free_trade
+				activate_law = law_type:law_no_social_security
+				activate_law = law_type:law_no_home_affairs
+				}
+			}
+			create_diplomatic_pact = {
+				country = c:BIC
+				type = puppet
+			}
+			create_diplomatic_pact = {
+				country = c:SAF
+				type = dominion
+			}
+			create_diplomatic_pact = {
+				country = c:CAN
+				type = dominion
+			}
+			create_diplomatic_pact = {
+				country = c:AST
+				type = dominion
+			}
+		}
+	s:STATE_EASTERN_CAPE = {#南非
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:SAF
+			}
+	}
+	s:STATE_CAPE_COLONY = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:SAF
+			}
+	}
+	s:STATE_NORTHERN_CAPE = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:SAF
+			}
+	}
+	s:STATE_ZULULAND = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:SAF
+			}
+	}
+	s:STATE_VRYSTAAT = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:SAF
+			}
+	}
+	s:STATE_TRANSVAAL = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:SAF
+			}
+	}
+	s:STATE_ONTARIO = {#加拿大
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_NEW_BRUNSWICK = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_QUEBEC = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_BRITISH_COLUMBIA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_SASKATCHEWAN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_MANITOBA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_ALBERTA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_YUKON_TERRITORY = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_NORTHWEST_TERRITORIES = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_NUNAVUT = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:CAN
+			}
+	}
+	s:STATE_NEW_SOUTH_WALES = {#澳大利亚
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:AST
+			}
+	}
+	s:STATE_VICTORIA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:AST
+			}
+	}
+	s:STATE_TASMANIA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:AST
+			}
+	}
+	s:STATE_QUEENSLAND = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:AST
+			}
+	}
+	s:STATE_SOUTH_AUSTRALIA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:AST
+			}
+	}
+	s:STATE_WESTERN_AUSTRALIA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:AST
+			}
+	}
+	s:STATE_NORTHERN_TERRITORY = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:AST
+			}
+	}
+	s:STATE_NORTH_ISLAND = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:AST
+			}
+	}
+	s:STATE_SOUTH_ISLAND = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:AST
+			}
+	}
+	s:STATE_KASHMIR = {#印度
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PASHTUNISTAN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PUNJAB = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_DELHI = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_AWADH = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BIHAR = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SOUTH_BENGAL = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_NORTH_BENGAL = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_ASSAM = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SINDH = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_RAJPUTANA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_CENTRAL_INDIA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_NAGPUR = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_ORISSA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BOMBAY = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_GUJARAT = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_HYDERABAD = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_CIRCARS = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_MYSORE = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_MADRAS = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_TENASSERIM = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_HIMALAYAS = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BALUCHISTAN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_KACHIN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BURMA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SHAN_STATES = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PEGU = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_TENASSERIM = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_TRAVANCORE = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.4 = {#加拿大成功
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.4.t
+	desc = joi_flavor_gbr.4.d
+	flavor = joi_flavor_gbr.4.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.4.a
+		add_loyalists = {
+			value = 0.1
+		}
+		add_modifier = {
+				name = can_explore
+				months = 120
+			}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_ALBERTA
+					state_region = s:STATE_SASKATCHEWAN
+					state_region = s:STATE_MANITOBA
+					state_region = s:STATE_NUNAVUT
+					state_region = s:STATE_NORTHWEST_TERRITORIES
+					state_region = s:STATE_YUKON_TERRITORY
+					state_region = s:STATE_BRITISH_COLUMBIA
+					state_region = s:STATE_QUEBEC
+					state_region = s:STATE_NEW_BRUNSWICK
+					state_region = s:STATE_ONTARIO
+					state_region = s:STATE_NEWFOUNDLAND 
+				}
+			}
+			add_modifier = {
+				name = can_explore_1
+				months = -1
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.5 = {#加拿大失败
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.5.t
+	desc = joi_flavor_gbr.5.d
+	flavor = joi_flavor_gbr.5.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.5.a
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_ALBERTA
+					state_region = s:STATE_SASKATCHEWAN
+					state_region = s:STATE_MANITOBA
+					state_region = s:STATE_NUNAVUT
+					state_region = s:STATE_NORTHWEST_TERRITORIES
+					state_region = s:STATE_YUKON_TERRITORY
+					state_region = s:STATE_BRITISH_COLUMBIA
+					state_region = s:STATE_QUEBEC
+					state_region = s:STATE_NEW_BRUNSWICK
+					state_region = s:STATE_ONTARIO
+					state_region = s:STATE_NEWFOUNDLAND 
+				}
+			}
+			add_modifier = {
+				name = autonomous_region
+				months = 120
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.6 = {#澳大利亚成功
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.6.t
+	desc = joi_flavor_gbr.6.d
+	flavor = joi_flavor_gbr.6.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_gold_prospectors"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.6.a
+		add_loyalists = {
+			value = 0.1
+		}
+		add_modifier = {
+				name = ast_explore
+				months = 120
+			}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_NEW_SOUTH_WALES
+					state_region = s:STATE_VICTORIA
+					state_region = s:STATE_TASMANIA
+					state_region = s:STATE_QUEENSLAND
+					state_region = s:STATE_SOUTH_AUSTRALIA
+					state_region = s:STATE_WESTERN_AUSTRALIA
+					state_region = s:STATE_NORTHERN_TERRITORY
+					state_region = s:STATE_NORTH_ISLAND
+					state_region = s:STATE_SOUTH_ISLAND
+				}
+			}
+			add_modifier = {
+				name = ast_explore_1
+				months = -1
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.7 = {#澳大利亚失败
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.7.t
+	desc = joi_flavor_gbr.7.d
+	flavor = joi_flavor_gbr.7.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.7.a
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_NEW_SOUTH_WALES
+					state_region = s:STATE_VICTORIA
+					state_region = s:STATE_TASMANIA
+					state_region = s:STATE_QUEENSLAND
+					state_region = s:STATE_SOUTH_AUSTRALIA
+					state_region = s:STATE_WESTERN_AUSTRALIA
+					state_region = s:STATE_NORTHERN_TERRITORY
+					state_region = s:STATE_NORTH_ISLAND
+					state_region = s:STATE_SOUTH_ISLAND
+				}
+			}
+			add_modifier = {
+				name = autonomous_region
+				months = 120
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.8 = {#南非成功
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.8.t
+	desc = joi_flavor_gbr.8.d
+	flavor = joi_flavor_gbr.8.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.8.a
+		add_journal_entry = {
+			type = conqueror_aferica
+		}
+		add_journal_entry = {
+			type = conqueror_egypt
+		}
+		add_modifier = {
+				name = westminster_system
+				months = -1
+			}
+		every_scope_state = {
+			limit = {
+					state_region = s:STATE_HOME_COUNTIES
+			}
+			add_modifier = {
+				name = city_of_london
+				months = -1
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.9 = {#南非失败
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.9.t
+	desc = joi_flavor_gbr.9.d
+	flavor = joi_flavor_gbr.9.f
+
+	duration = 3
+
+	event_image = {
+		video = "middleeast_battlefield_trenches"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.9.a
+		add_modifier = {
+				name = war_of_buer
+				months = 120
+			}
+		add_modifier = {
+				name = criticize_imperialism
+				months = 240
+			}
+
+	}
+}
+
+joi_flavor_gbr.10 = {#爱尔兰成功
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.10.t
+	desc = joi_flavor_gbr.10.d
+	flavor = joi_flavor_gbr.10.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.10.a
+		add_modifier = {
+				name = ire_uk
+				months = 120
+			}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_ULSTER
+					state_region = s:STATE_CONNAUGHT
+					state_region = s:STATE_LEINSTER
+					state_region = s:STATE_MUNSTER
+				}
+			}
+			add_modifier = {
+				name = ire_united
+				months = -1
+			}
+		}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_HOME_COUNTIES
+					state_region = s:STATE_WEST_COUNTRY
+					state_region = s:STATE_MIDLANDS
+					state_region = s:STATE_WALES
+					state_region = s:STATE_YORKSHIRE
+					state_region = s:STATE_LANCASHIRE
+				}
+			}
+			add_modifier = {
+				name = eng_ire
+				months = 30
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.11 = {#爱尔兰大饥荒
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.11.t
+	desc = joi_flavor_gbr.11.d
+	flavor = joi_flavor_gbr.11.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = ire_major_famine
+}
+
+	option = {
+
+		name = joi_flavor_gbr.11.a
+		add_journal_entry = {
+			type = ireland_major_famine
+		}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_ULSTER
+					state_region = s:STATE_CONNAUGHT
+					state_region = s:STATE_LEINSTER
+					state_region = s:STATE_MUNSTER
+				}
+			}
+			add_modifier = {
+				name = ire_famine
+				months = 60
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.12 = {#印度事务法
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.12.t
+	desc = joi_flavor_gbr.12.d
+	flavor = joi_flavor_gbr.12.f
+
+	duration = 3
+
+	event_image = {
+		video = "asia_hinduism_sikhism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:BIC = {
+            save_scope_as = BIC_scope
+        }
+}
+
+	option = {
+
+		name = joi_flavor_gbr.12.a
+		default_option = yes
+		s:STATE_KACHIN = {
+			add_claim = ROOT
+		}
+		s:STATE_BURMA = {
+			add_claim = ROOT
+		}
+		s:STATE_SHAN_STATES = {
+			add_claim = ROOT
+		}
+		s:STATE_PEGU = {
+			add_claim = ROOT
+		}
+		add_journal_entry = {
+			type = conqueror_burma
+		}
+		add_journal_entry = {
+			type = indian_major_railway
+		}
+		add_journal_entry = {
+			type = indian_office
+				}
+		remove_modifier = civil_service_system
+		add_modifier = {
+				name = civil_service_system_1
+				months = -1
+			}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_KASHMIR
+					state_region = s:STATE_PASHTUNISTAN
+					state_region = s:STATE_PUNJAB
+					state_region = s:STATE_DELHI
+					state_region = s:STATE_AWADH
+					state_region = s:STATE_BIHAR
+					state_region = s:STATE_NORTH_BENGAL
+					state_region = s:STATE_SOUTH_BENGAL
+					state_region = s:STATE_ASSAM
+					state_region = s:STATE_SINDH
+					state_region = s:STATE_RAJPUTANA
+					state_region = s:STATE_CENTRAL_INDIA
+					state_region = s:STATE_NAGPUR
+					state_region = s:STATE_ORISSA
+					state_region = s:STATE_BOMBAY
+					state_region = s:STATE_GUJARAT
+					state_region = s:STATE_HYDERABAD
+					state_region = s:STATE_CIRCARS
+					state_region = s:STATE_MYSORE
+					state_region = s:STATE_MADRAS
+					state_region = s:STATE_CEYLON
+					state_region = s:STATE_TENASSERIM
+					state_region = s:STATE_HIMALAYAS
+					state_region = s:STATE_BALUCHISTAN
+					state_region = s:STATE_TRAVANCORE
+				}
+			}
+			add_modifier = {
+				name = bic_civil_service
+				months = -1
+			}
+		}
+	}
+
+		option = {
+
+		name = joi_flavor_gbr.12.b
+		add_modifier = {
+				name = wealth_of_india
+				months = -1
+			}
+		create_country = {
+				tag = BIC
+				origin = this
+				state = s:STATE_DELHI.region_state:GBR
+				on_created = {
+				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_racial_segregation
+				activate_law = law_type:law_interventionism
+				activate_law = law_type:law_oligarchy
+				activate_law = law_type:law_no_colonial_affairs
+				activate_law = law_type:law_free_trade
+				activate_law = law_type:law_no_social_security
+				activate_law = law_type:law_no_home_affairs
+				activate_law = law_type:law_no_workers_rights
+				activate_law = law_type:law_no_womens_rights 
+				activate_law = law_type:law_appointed_bureaucrats
+				activate_law = law_type:law_tenant_farmers
+				activate_law = law_type:law_no_health_system
+				activate_law = law_type:law_total_separation
+				activate_law = law_type:law_no_schools
+				add_primary_culture = cu:bengali
+				add_modifier = {
+				name = india_adm
+				months = -1				
+				}	
+				add_modifier = {
+				name = master_of_india
+				months = -1				
+				}	
+			add_journal_entry = {
+			type = conqueror_burma
+				}
+		    add_journal_entry = {
+			type = indian_major_railway
+				}
+			}
+		}
+		create_diplomatic_pact = {
+				country = c:BIC
+				type = dominion
+			}
+	s:STATE_KASHMIR = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PASHTUNISTAN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PUNJAB = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_DELHI = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_AWADH = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BIHAR = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SOUTH_BENGAL = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_NORTH_BENGAL = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_ASSAM = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SINDH = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_RAJPUTANA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_CENTRAL_INDIA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_NAGPUR = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_ORISSA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BOMBAY = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_GUJARAT = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_HYDERABAD = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_CIRCARS = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_MYSORE = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_MADRAS = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_TENASSERIM = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_HIMALAYAS = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BALUCHISTAN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_KACHIN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BURMA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SHAN_STATES = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PEGU = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_TENASSERIM = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_TRAVANCORE = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.13 = {#印度失败
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.13.t
+	desc = joi_flavor_gbr.13.d
+	flavor = joi_flavor_gbr.13.f
+
+	duration = 3
+
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.13.a
+		add_modifier = {
+				name = indian_loss
+				months = 120
+			}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_KASHMIR
+					state_region = s:STATE_PASHTUNISTAN
+					state_region = s:STATE_PUNJAB
+					state_region = s:STATE_DELHI
+					state_region = s:STATE_AWADH
+					state_region = s:STATE_BIHAR
+					state_region = s:STATE_NORTH_BENGAL
+					state_region = s:STATE_SOUTH_BENGAL
+					state_region = s:STATE_ASSAM
+					state_region = s:STATE_SINDH
+					state_region = s:STATE_RAJPUTANA
+					state_region = s:STATE_CENTRAL_INDIA
+					state_region = s:STATE_NAGPUR
+					state_region = s:STATE_ORISSA
+					state_region = s:STATE_BOMBAY
+					state_region = s:STATE_GUJARAT
+					state_region = s:STATE_HYDERABAD
+					state_region = s:STATE_CIRCARS
+					state_region = s:STATE_MYSORE
+					state_region = s:STATE_MADRAS
+					state_region = s:STATE_CEYLON
+					state_region = s:STATE_TENASSERIM
+					state_region = s:STATE_HIMALAYAS
+					state_region = s:STATE_BALUCHISTAN
+					state_region = s:STATE_TRAVANCORE
+				}
+			}
+			add_modifier = {
+				name = autonomous_region_1
+				months = 240
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.14 = {#爱尔兰饥荒：治理完成
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.14.t
+	desc = joi_flavor_gbr.14.d
+	flavor = joi_flavor_gbr.14.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.14.a
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_ULSTER
+					state_region = s:STATE_CONNAUGHT
+					state_region = s:STATE_LEINSTER
+					state_region = s:STATE_MUNSTER
+				}
+			}
+			add_modifier = {
+				name = ire_famine_left
+				months = 60
+			}
+		}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_ULSTER
+					state_region = s:STATE_CONNAUGHT
+					state_region = s:STATE_LEINSTER
+					state_region = s:STATE_MUNSTER
+				}
+			}
+			add_modifier = {
+				name = ire_famine_relief
+				months = 60
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.15 = {#爱尔兰饥荒：不治理
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.15.t
+	desc = joi_flavor_gbr.15.d
+	flavor = joi_flavor_gbr.15.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_russian_serfs"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.15.a
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_ULSTER
+					state_region = s:STATE_CONNAUGHT
+					state_region = s:STATE_LEINSTER
+					state_region = s:STATE_MUNSTER
+				}
+			}
+			add_modifier = {
+				name = ire_famine_left
+				months = 60
+			}
+		}
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_ULSTER
+					state_region = s:STATE_CONNAUGHT
+					state_region = s:STATE_LEINSTER
+					state_region = s:STATE_MUNSTER
+				}
+			}
+			add_modifier = {
+				name = angry_irish
+				months = -1
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.16 = {#征服缅甸
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.16.t
+	desc = joi_flavor_gbr.16.d
+	flavor = joi_flavor_gbr.16.f
+
+	duration = 3
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.16.a
+		change_relations = {
+			country = c:CHI
+			value = -20
+		}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_KACHIN
+					state_region = s:STATE_BURMA
+					state_region = s:STATE_SHAN_STATES
+					state_region = s:STATE_PEGU
+				}
+			}
+			add_modifier = {
+				name = bic_civil_service
+				months = -1
+			}
+			add_modifier = {
+				name = burma_adm
+				months = 120
+			}
+		}
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.16.b
+		trigger = {
+			exists = c:BIC
+			THIS = c:GBR
+		}
+		change_relations = {
+			country = c:CHI
+			value = -20
+		}
+		s:STATE_KACHIN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BURMA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SHAN_STATES= {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PEGU = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.17 = {#征服埃及
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.17.t
+	desc = joi_flavor_gbr.17.d
+	flavor = joi_flavor_gbr.17.f
+
+	duration = 3
+
+	event_image = {
+		video = "middleeast_courtroom_upheaval"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.17.a
+			add_modifier = {
+				name = egy_adm
+				months = -1
+			}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_LOWER_EGYPT
+					state_region = s:STATE_MIDDLE_EGYPT
+					state_region = s:STATE_MATRUH
+					state_region = s:STATE_EGYPTIAN_DESERT
+					state_region = s:STATE_UPPER_EGYPT
+					state_region = s:STATE_SINAI
+				}
+			}
+			add_modifier = {
+				name = egy_adm_1
+				months = -1
+			}
+		}
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.17.b
+		default_option = yes
+		add_modifier = {
+				name = egy_mil
+				months = -1
+			}
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_LOWER_EGYPT
+					state_region = s:STATE_MIDDLE_EGYPT
+					state_region = s:STATE_MATRUH
+					state_region = s:STATE_EGYPTIAN_DESERT
+					state_region = s:STATE_UPPER_EGYPT
+					state_region = s:STATE_SINAI
+				}
+			}
+			add_modifier = {
+				name = egy_mil_1
+				months = -1
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.18 = {#从开罗到开普敦
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.18.t
+	desc = joi_flavor_gbr.18.d
+	flavor = joi_flavor_gbr.18.f
+
+	duration = 3
+
+	event_image = {
+		video = "africa_desert_expedition"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.18.a
+			add_modifier = {
+				name = emp_gbr_aferica
+				months = -1
+			}
+		}
+	}
+
+joi_flavor_gbr.19 = {#大印度半岛铁路
+	type = country_event·
+	placement = root
+	title = joi_flavor_gbr.19.t
+	desc = joi_flavor_gbr.19.d
+	flavor = joi_flavor_gbr.19.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_trains"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.19.a
+			every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_KASHMIR
+					state_region = s:STATE_PASHTUNISTAN
+					state_region = s:STATE_PUNJAB
+					state_region = s:STATE_DELHI
+					state_region = s:STATE_AWADH
+					state_region = s:STATE_BIHAR
+					state_region = s:STATE_NORTH_BENGAL
+					state_region = s:STATE_SOUTH_BENGAL
+					state_region = s:STATE_ASSAM
+					state_region = s:STATE_SINDH
+					state_region = s:STATE_RAJPUTANA
+					state_region = s:STATE_CENTRAL_INDIA
+					state_region = s:STATE_NAGPUR
+					state_region = s:STATE_ORISSA
+					state_region = s:STATE_BOMBAY
+					state_region = s:STATE_GUJARAT
+					state_region = s:STATE_HYDERABAD
+					state_region = s:STATE_CIRCARS
+					state_region = s:STATE_MYSORE
+					state_region = s:STATE_MADRAS
+					state_region = s:STATE_CEYLON
+					state_region = s:STATE_TENASSERIM
+					state_region = s:STATE_HIMALAYAS
+					state_region = s:STATE_BALUCHISTAN
+					state_region = s:STATE_TRAVANCORE
+					state_region = s:STATE_KACHIN
+					state_region = s:STATE_BURMA
+					state_region = s:STATE_SHAN_STATES
+					state_region = s:STATE_PEGU
+				}
+			}
+			add_modifier = {
+				name = indian_railway
+				months = -1
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.20 = {#英美同盟
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.20.t
+	desc = joi_flavor_gbr.20.d
+	flavor = joi_flavor_gbr.20.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:USA = {
+            save_scope_as = USA_scope
+        }
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.20.a
+		custom_tooltip = {
+			text = invest_in_us_1_tt
+			change_variable = {
+			name = investment_amount_var
+			add = 25
+			}
+		}
+		change_relations = {
+			country = c:USA
+			value = 50
+		}
+		create_diplomatic_pact = {
+				country = c:USA
+				type = alliance
+			}
+		create_diplomatic_pact = {
+				country = c:USA
+				type = trade_agreement
+			}
+		}
+		
+	option = {
+
+		name = joi_flavor_gbr.20.b
+			custom_tooltip = {
+			text = invest_in_us_1_tt
+			change_variable = {
+			name = investment_amount_var
+			add = 25
+			}
+		}
+		change_relations = {
+			country = c:USA
+			value = 30
+		}
+		create_diplomatic_pact = {
+				country = c:USA
+				type = trade_agreement
+			}
+		}
+	}
+
+joi_flavor_gbr.21 = {#在美投资大获成功
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.21.t
+	desc = joi_flavor_gbr.21.d
+	flavor = joi_flavor_gbr.21.f
+
+	duration = 3
+
+	event_image = {
+		video = "southamerica_factory_opening"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.21.a
+		custom_tooltip = {
+		text = invest_in_us_1_tt
+		change_variable = {
+		name = investment_amount_var
+		add = 25
+		}
+	}
+		change_relations = {
+			country = c:USA
+			value = 10
+		}
+	}
+}
+
+joi_flavor_gbr.22 = {#在美投资遭受失败
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.22.t
+	desc = joi_flavor_gbr.22.d
+	flavor = joi_flavor_gbr.22.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.22.a
+		custom_tooltip = {
+		text = invest_in_us_2_tt
+		change_variable = {
+		name = investment_amount_var
+		add = -25
+		}
+	}
+		change_relations = {
+			country = c:USA
+			value = -5
+			}
+		}
+	}
+
+joi_flavor_gbr.23 = {#英国请求贷款
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.23.t
+	desc = joi_flavor_gbr.23.d
+	flavor = joi_flavor_gbr.23.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_politicians_arguing"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:GBR = {
+            save_scope_as = GBR_scope
+        }
+}
+
+	option = {
+
+		name = joi_flavor_gbr.23.a
+		add_modifier = {
+				name = gbr_cash
+				months = 5
+		}
+		c:GBR = {
+				add_modifier = {
+					name = usa_cash
+					months = 5
+			}
+		}
+		change_relations = {
+			country = c:GBR
+			value = 50
+		}
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.23.b
+		change_relations = {
+			country = c:GBR
+			value = -5
+		}
+	}
+}
+
+joi_flavor_gbr.24 = {#印度教士兵暴动
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.24.t
+	desc = joi_flavor_gbr.24.d
+	flavor = joi_flavor_gbr.24.f
+
+	duration = 3
+
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.24.a
+		custom_tooltip = {
+		text = indian_rule_1_tt
+		change_variable = {
+            name = indian_adm_var
+            add = 10
+        }
+    }
+		add_radicals = {
+			religion = rel:hindu
+			pop_type = soldiers
+			value = 0.05
+			}
+		}
+
+	option = {
+
+		name = joi_flavor_gbr.24.b
+		custom_tooltip = {
+		text = indian_rule_2_tt
+		change_variable = {
+            name = indian_adm_var
+            add = -10
+        }
+    }
+		add_loyalists = {
+			religion = rel:hindu
+			pop_type = soldiers
+			value = 0.05
+		}
+	}
+}
+
+joi_flavor_gbr.25 = {#土邦议会请愿
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.25.t
+	desc = joi_flavor_gbr.25.d
+	flavor = joi_flavor_gbr.25.f
+
+	duration = 3
+
+	event_image = {
+		video = "asia_politician_parliament_motion"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.25.a
+		custom_tooltip = {
+		text = indian_rule_2_tt
+		change_variable = {
+            name = indian_adm_var
+            add = -10
+        }
+    }
+		add_loyalists = {
+			religion = rel:hindu
+			pop_type = aristocrats
+			value = 0.05
+			}
+		add_loyalists = {
+			religion = rel:hindu
+			pop_type = academics
+			value = 0.05
+			}
+		}
+
+	option = {
+
+		name = joi_flavor_gbr.25.b
+		custom_tooltip = {
+		text = indian_rule_1_tt
+		change_variable = {
+            name = indian_adm_var
+            add = 10
+        }
+    }
+		add_radicals = {
+			religion = rel:hindu
+			pop_type = aristocrats
+			value = 0.05
+			}
+		add_radicals = {
+			religion = rel:hindu
+			pop_type = academics
+			value = 0.05
+			}
+		}
+	}
+
+joi_flavor_gbr.26 = {#杰出官员
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.26.t
+	desc = joi_flavor_gbr.26.d
+	flavor = joi_flavor_gbr.26.f
+
+	duration = 3
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+		var:indian_adm_var >= 20
+	}
+
+	immediate = {
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.26.a
+		custom_tooltip = {
+		text = indian_rule_1_tt
+		change_variable = {
+            name = indian_adm_var
+            add = 10
+        }
+    }
+        random_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_KASHMIR
+					state_region = s:STATE_PASHTUNISTAN
+					state_region = s:STATE_PUNJAB
+					state_region = s:STATE_DELHI
+					state_region = s:STATE_AWADH
+					state_region = s:STATE_BIHAR
+					state_region = s:STATE_NORTH_BENGAL
+					state_region = s:STATE_SOUTH_BENGAL
+					state_region = s:STATE_ASSAM
+					state_region = s:STATE_SINDH
+					state_region = s:STATE_RAJPUTANA
+					state_region = s:STATE_CENTRAL_INDIA
+					state_region = s:STATE_NAGPUR
+					state_region = s:STATE_ORISSA
+					state_region = s:STATE_BOMBAY
+					state_region = s:STATE_GUJARAT
+					state_region = s:STATE_HYDERABAD
+					state_region = s:STATE_CIRCARS
+					state_region = s:STATE_MYSORE
+					state_region = s:STATE_MADRAS
+					state_region = s:STATE_CEYLON
+					state_region = s:STATE_TENASSERIM
+					state_region = s:STATE_HIMALAYAS
+					state_region = s:STATE_BALUCHISTAN
+					state_region = s:STATE_TRAVANCORE
+					state_region = s:STATE_KACHIN
+					state_region = s:STATE_BURMA
+					state_region = s:STATE_SHAN_STATES
+					state_region = s:STATE_PEGU
+				}
+			}
+			add_modifier = {
+				name = great_indian_adm
+				months = 60
+				}
+		}
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.26.b
+		random_scope_state = {
+		    limit = {
+				OR = {
+					state_region = s:STATE_HOME_COUNTIES
+					state_region = s:STATE_WEST_COUNTRY
+					state_region = s:STATE_MIDLANDS
+					state_region = s:STATE_YORKSHIRE
+					state_region = s:STATE_LANCASHIRE
+					state_region = s:STATE_WALES
+					state_region = s:STATE_LOWLANDS
+					state_region = s:STATE_HIGHLANDS
+					state_region = s:STATE_LEINSTER
+					state_region = s:STATE_ULSTER
+					state_region = s:STATE_CONNAUGHT
+					state_region = s:STATE_MUNSTER
+				}
+			}
+			add_modifier = {
+				name = get_better_adm
+				months = 60
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.27 = {#粮食短缺
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.27.t
+	desc = joi_flavor_gbr.27.d
+	flavor = joi_flavor_gbr.27.f
+
+	duration = 3
+
+	event_image = {
+		video = "asia_poor_people_moving"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	trigger = {
+		var:indian_adm_var <= 60
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_KASHMIR
+					state_region = s:STATE_PASHTUNISTAN
+					state_region = s:STATE_PUNJAB
+					state_region = s:STATE_DELHI
+					state_region = s:STATE_AWADH
+					state_region = s:STATE_BIHAR
+					state_region = s:STATE_NORTH_BENGAL
+					state_region = s:STATE_SOUTH_BENGAL
+					state_region = s:STATE_ASSAM
+					state_region = s:STATE_SINDH
+					state_region = s:STATE_RAJPUTANA
+					state_region = s:STATE_CENTRAL_INDIA
+					state_region = s:STATE_NAGPUR
+					state_region = s:STATE_ORISSA
+					state_region = s:STATE_BOMBAY
+					state_region = s:STATE_GUJARAT
+					state_region = s:STATE_HYDERABAD
+					state_region = s:STATE_CIRCARS
+					state_region = s:STATE_MYSORE
+					state_region = s:STATE_MADRAS
+					state_region = s:STATE_CEYLON
+					state_region = s:STATE_TENASSERIM
+					state_region = s:STATE_HIMALAYAS
+					state_region = s:STATE_BALUCHISTAN
+					state_region = s:STATE_TRAVANCORE
+					state_region = s:STATE_KACHIN
+					state_region = s:STATE_BURMA
+					state_region = s:STATE_SHAN_STATES
+					state_region = s:STATE_PEGU
+				}
+			}
+			set_variable = need_corn
+			add_modifier = {
+				name = need_corn_help
+				months = 12
+			}
+		}
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.27.a
+		custom_tooltip = {
+		text = indian_rule_2_tt
+		change_variable = {
+            name = indian_adm_var
+            add = -10
+        }
+    }
+        add_loyalists= {
+			culture = cu:british
+			pop_type = capitalists
+			value = 0.1
+			}
+		add_loyalists= {
+			culture = cu:british
+			pop_type = bureaucrats
+			value = 0.1
+			}
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.27.b
+		custom_tooltip = {
+		text = indian_rule_1_tt
+		change_variable = {
+            name = indian_adm_var
+            add = 10
+        }
+    }
+		add_modifier = {
+				name = help_for_corn
+				months = 12
+			}
+		random_scope_state = {
+			limit = {
+			has_variable = need_corn
+		}
+		add_modifier = {
+				name = corn_help
+				months = 12
+			}		
+		}
+	}
+}
+
+joi_flavor_gbr.28 = {#英属印度政府
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.28.t
+	desc = joi_flavor_gbr.28.d
+	flavor = joi_flavor_gbr.28.f
+
+	duration = 3
+
+	event_image = {
+		video = "asia_hinduism_sikhism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:BIC = {
+            save_scope_as = BIC_scope
+        }
+}
+
+		option = {
+
+		name = joi_flavor_gbr.28.a
+		add_modifier = {
+				name = wealth_of_india
+				months = -1
+			}
+		create_country = {
+				tag = BIC
+				origin = this
+				state = s:STATE_DELHI.region_state:GBR
+				on_created = {
+				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_racial_segregation
+				activate_law = law_type:law_interventionism
+				activate_law = law_type:law_oligarchy
+				activate_law = law_type:law_no_colonial_affairs
+				activate_law = law_type:law_free_trade
+				activate_law = law_type:law_no_social_security
+				activate_law = law_type:law_no_home_affairs
+				activate_law = law_type:law_no_workers_rights
+				activate_law = law_type:law_no_womens_rights 
+				activate_law = law_type:law_appointed_bureaucrats
+				activate_law = law_type:law_tenant_farmers
+				activate_law = law_type:law_no_health_system
+				activate_law = law_type:law_total_separation
+				activate_law = law_type:law_no_schools
+				add_primary_culture = cu:bengali
+				add_modifier = {
+				name = india_adm
+				months = -1				
+				}	
+				add_modifier = {
+				name = master_of_india
+				months = -1				
+				}	
+			add_journal_entry = {
+			type = conqueror_burma
+				}
+		    add_journal_entry = {
+			type = indian_major_railway
+				}
+			}
+		}
+		create_diplomatic_pact = {
+				country = c:BIC
+				type = dominion
+			}
+	s:STATE_KASHMIR = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PASHTUNISTAN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PUNJAB = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_DELHI = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_AWADH = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BIHAR = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SOUTH_BENGAL = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_NORTH_BENGAL = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_ASSAM = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SINDH = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_RAJPUTANA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_CENTRAL_INDIA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_NAGPUR = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_ORISSA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BOMBAY = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_GUJARAT = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_HYDERABAD = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_CIRCARS = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_MYSORE = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_MADRAS = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_TENASSERIM = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_HIMALAYAS = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BALUCHISTAN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_KACHIN = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_BURMA = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_SHAN_STATES = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_PEGU = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_TENASSERIM = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+	}
+	s:STATE_TRAVANCORE = {
+			random_scope_state = {
+				limit = {
+					exists = c:GBR
+					owner = {
+						c:GBR = THIS
+					}
+				}
+				set_state_owner = c:BIC
+			}
+		}
+	}
+}
+
+joi_flavor_gbr.29 = {#印度事务大臣的任命
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.29.t
+	desc = joi_flavor_gbr.29.d
+	flavor = joi_flavor_gbr.29.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+}
+
+	option = {
+
+		name = joi_flavor_gbr.29.a
+		custom_tooltip = {
+			text = indian_minister_tt
+		change_variable = {
+			name = indian_adm_var
+			add = 40
+		}
+		set_variable = indian_start
+		}
+	}
+}
+
+joi_flavor_gbr.30 = {#英美同盟(美国方)
+	type = country_event
+	placement = root
+	title = joi_flavor_gbr.30.t
+	desc = joi_flavor_gbr.30.d
+	flavor = joi_flavor_gbr.30.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:GBR = {
+            save_scope_as = GBR_scope
+        }
+	}
+
+	option = {
+
+		name = joi_flavor_gbr.30.a
+		custom_tooltip = {
+			text = usa_refuse_relation
+			set_global_variable = usa_refuse_special_relationship
+		}
+		change_relations = {
+			country = c:GBR
+			value = -30
+		}
+	}
+		
+		
+	option = {
+
+		name = joi_flavor_gbr.30.b
+			add_journal_entry = { 
+			type = american_anglo_special_relationship
+		}
+			custom_tooltip = {
+			text = usa_accpet_relation
+			set_variable = {
+			name = usa_infulence_var
+			value = 0
+			}
+		}
+		c:GBR = {
+		trigger_event = {
+			id = joi_flavor_gbr.20
+			}
+		}
+	}
+}

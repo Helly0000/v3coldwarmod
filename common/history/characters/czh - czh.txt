@@ -1,0 +1,44 @@
+﻿CHARACTERS = {
+	c:CZH = {
+		create_character = {
+			#克莱门特·哥特瓦尔德
+			first_name = "Clement"
+			last_name = "Gottwald"
+			culture=cu:czech #捷克
+			historical = yes
+			ruler = yes
+			birth_date = 1896.11.23
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}
+
+		create_character = {
+			#爱德华·贝奈斯总统
+			first_name = "Edward"
+			last_name = "Benes1"
+			culture=cu:czech #捷克
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1884.5.28
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_ethno_nationalist #族裔民族主义者
+			traits = {
+			}
+		}		
+
+		create_character = {
+			#安东宁·诺沃提尼
+			first_name = "Antonin"
+			last_name = "Novotini"
+			culture=cu:czech #捷克
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1904.12.10
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}		
+}

@@ -1,0 +1,14 @@
+to_win_over_devout_believers = { #拉拢虔信者
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtain_the_support_of_devout_believers } #没有获得虔信者支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtain_the_support_of_devout_believers #获得虔信者支持
+			years = 5	
+		}
+	}
+}

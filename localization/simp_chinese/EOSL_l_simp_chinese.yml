@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+ factory_work:0 "转塔车床"
+ factory_work_desc: "转塔车床是传统金属车床的更新版本。它具有一个转塔——一个可以转位的方便刀架。"
+ lathe_work:0 "回轮车床"
+ lathe_work_desc: "具有回转轴线与主轴轴线平行的回轮转塔刀架，并可顺序转位车削工件的车床。"
+ efficient_work:0 "自动车床"
+ efficient_work_desc: "自动车床是一种高性能，高精度，低噪音的走刀式自动车床，是通过凸轮来控制加工程序的自动加工机床。"
+ electrical_work:0 "高效自动车床"
+ electrical_work_desc: "高效自动车床通过凸轮控制加工过程，凸轮每转一个回转即完成一个加工过程。由于很多把刀能同时进行切削加工，加工效率非常高，是一般自动车床无法比拟的。"

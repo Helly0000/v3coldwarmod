@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:HUN = {
+		create_character = {
+			#蒂尔迪·佐尔坦
+			first_name = "Tildi"
+			last_name = "Zoltan"
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			birth_date = 1900.1.1
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}		
+	}
+}

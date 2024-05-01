@@ -1,0 +1,24 @@
+﻿restructuring_the_railway_system = { #重组铁路系统
+	is_shown = {
+			is_ai = no
+		NOT = { 
+			has_modifier = restructuring_the_railway_system
+		}
+	}
+	possible = {
+		produced_bureaucracy > 100	
+		has_technology_researched = railways #铁路	
+			any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_railway
+				level >= 2
+			}
+		}	
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = restructuring_the_railway_system
+		}
+	}
+}

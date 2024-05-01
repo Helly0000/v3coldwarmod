@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+  #三皇同盟
+ joi_flavor_expand.1.t: "美泉宫会议"
+ joi_flavor_expand.1.d: "一次关于商讨德，奥，俄之间新的联盟协议的会议在美泉宫召开..."
+ joi_flavor_expand.1.f: "[SCOPE.sCountry('GER_scope').GetName]，[SCOPE.sCountry('RUS_scope').GetName]和[SCOPE.sCountry('AUS_scope').GetName]出于通过旨在确保各自国家防御地位的谅解来加强普遍和平的同等愿望，决定确认通过一项特殊安排在三国之间达成的协议，并由[SCOPE.sCountry('RUS_scope').GetName]皇帝陛下，[SCOPE.sCountry('GER_scope').GetName]皇帝陛下和[SCOPE.sCountry('AUS_scope').GetName]特命全权大使商定以下条款：\n\n一，如果一缔约方发现自己与第三大国发生战争，另一缔约方将对其保持善意的中立，并致力于冲突的本地化。若缔约方发现自己正处于一场防御的战争中，则其余缔约方则有义务加入并援助遭受入侵的一方。\n\n二，德国承认俄罗斯历史上在巴尔干半岛获得的权利，特别是其在保加利亚和东鲁梅利亚的压倒性和决定性影响力的合法性...两国承诺，未经双方事先同意，不得对上述半岛的领土现状进行任何修改，并反对在任何情况下未经双方同意而扰乱或改变现状的任何企图。\n\n三：本条约自交换批准书之日起有效期二十年。\n\n四，缔约方相互承诺对本条约及其所附议定书的内容和存在保密，并应在两周内或更早的时间内获得批准和交换批准书。\n\n各全权代表签署本条约并加盖国徽，以资见证。"
+ joi_flavor_expand.1.a: "拒绝该协定。"
+ joi_flavor_expand.1.b: "让我们复兴神圣同盟时代的友谊！"

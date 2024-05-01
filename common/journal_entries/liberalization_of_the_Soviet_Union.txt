@@ -1,0 +1,22 @@
+liberalization_of_the_Soviet_Union = {
+
+	group = je_group_internal_affairs
+
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	possible = { #激活条件
+	}
+	complete = { #完成条件
+		game_date >= 1954.6.26
+	}
+    on_complete = {
+        activate_law = law_type:law_right_of_assembly #改变法律为集会权
+        activate_law = law_type:law_census_voting #改变法律为资格性选举制
+		add_modifier = {
+			name = the_voice_of_the_people #人民之声
+			years = 20
+		}
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

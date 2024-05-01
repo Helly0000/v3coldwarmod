@@ -1,0 +1,14 @@
+attract_rural_residents = { #拉拢乡村民众
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtaining_support_from_rural_residents } #没有获得乡村民众支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtaining_support_from_rural_residents #获得乡村民众支持
+			years = 5	
+		}
+	}
+}

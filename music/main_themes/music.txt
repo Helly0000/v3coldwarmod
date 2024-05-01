@@ -1,0 +1,9 @@
+﻿##### Romaioi Music
+
+main_theme_track_romaioi = {
+	music = "file:/music/World_War.ogg"
+	can_be_interrupted = yes
+}
+
+
+

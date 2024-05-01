@@ -1,0 +1,61 @@
+promoting_cultural_prosperity = { #促进文化繁荣
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_technology
+
+	possible = {
+		has_technology_researched = dialectics
+		any_scope_building = {
+			is_building_type = building_university
+		}
+	}
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_university
+			occupancy > 0.9
+			level >= 30
+			has_active_production_method = pm_philosophy_department
+		}
+		any_scope_building = {
+			filter = {
+				is_building_type = building_university
+			}
+			percent > 0.9
+			occupancy > 0.9
+			has_active_production_method = pm_philosophy_department
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = {
+				text = promoting_cultural_prosperity_tt
+			}
+		add_modifier = { name = ming_xixue years = 10 }
+		random_scope_character = {
+			limit = {
+				OR = {
+					has_role = politician
+					has_role = agitator
+					has_role = ruler
+				}
+				interest_group = ig_landowners
+				NOT = { has_ideology = ideology:ideology_social_democrat }
+				NOT = { has_ideology = ideology:ideology_vanguardist }
+				NOT = { has_ideology = ideology:ideology_market_liberal }
+				NOT = { has_ideology = ideology:ideology_communist }
+				NOT = { has_ideology = ideology:ideology_social_democrat }
+			}
+			set_ideology = ideology:ideology_humanitarian_royalist
+		}
+	}
+
+	on_timeout = {
+
+	}
+	
+	timeout = 9125
+    	weight = 1000
+   	 should_be_pinned_by_default = yes
+
+}

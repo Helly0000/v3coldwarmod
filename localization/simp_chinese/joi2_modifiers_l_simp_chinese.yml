@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ unit_navy_experience_gain_add: "海军每周$concept_unit_experience$获得"
+ unit_navy_experience_gain_add_desc: "海军每周可以获得以提高其$concept_veterancy_level$的$concept_unit_experience$数值"
+ unit_army_experience_gain_add: "陆军每周$concept_unit_experience$获得"
+ unit_army_experience_gain_add_desc: "陆军每周可以获得以提高其$concept_veterancy_level$的$concept_unit_experience$数值"

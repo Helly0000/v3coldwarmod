@@ -1,0 +1,263 @@
+﻿CHARACTERS = {
+	c:USA = {
+		create_character = {
+			#杜鲁门
+			historical = yes
+			first_name = Harry
+			last_name = Truman
+			culture = cu:yankee
+			ruler = yes
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_moderate #温和主义者
+			birth_date = 1884.5.8
+			traits = {
+				 cautious
+                                 charismatic								
+			}
+		}
+
+		create_character = {
+			#威廉·泽布朗·福斯特
+			historical = yes
+			first_name = William·Zebra
+			last_name = Forst
+			culture = cu:irish
+			religion = rel:atheist #无神论
+			ig_leader = yes
+			interest_group = ig_trade_unions
+			ideology = ideology_communist
+			birth_date = 1881.2.25
+			traits = {
+				 cautious
+                                 charismatic								
+			}
+		}
+
+		create_character = {
+                        #哈里博德
+			historical = yes
+			first_name = Harry
+			last_name = Border
+			culture = cu:dixie
+			birth_date = 1901.5.10
+			ig_leader = yes
+			interest_group = ig_landowners #农场主
+			ideology = ideology_moderate #温和主义者
+			traits = {
+				bigoted
+				experienced_political_operator
+			}
+		}
+
+		create_character = {
+			historical = yes
+			first_name = Adlai
+			last_name = Stevenson
+			culture = cu:yankee
+			birth_date = 1900.2.5
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_radical
+			traits = {
+				innovative
+				inspirational_orator
+                                alcoholic
+			}
+		}
+
+		create_character = {
+			first_name = Robert
+			last_name = Telford
+			culture = cu:yankee
+			birth_date = 1904.1.14
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_moderate
+			traits = {
+				arrogant
+				experienced_political_operator
+			}
+		}
+
+		create_character = {
+			first_name = Billy
+			last_name = Graham
+			culture = cu:yankee
+			birth_date = 1898.5.14
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_devout
+			ideology = ideology_moderate #温和主义者
+			traits = {
+				pious
+				grifter
+			}
+		}
+
+		create_character = {
+                        #艾森豪威尔
+			historical = yes
+			first_name = Dwight
+			last_name = David_Eisenhower
+			culture = cu:dixie
+			birth_date = 1890.10.4
+			is_general = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_republican_leader
+			hq = region_new_england
+			commander_rank = commander_rank_5
+			traits = {
+				traditionalist_commander
+				expert_offensive_planner
+				expert_artillery_commander
+                                plains_commander
+			}
+		}
+
+		create_character = {
+			historical = yes
+			first_name = Georges
+			last_name = Romney
+			culture = cu:yankee
+			birth_date = 1907.7.8
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_reformer
+			traits = {
+				basic_political_operator
+				expensive_tastes
+				pious
+			}
+		}
+		
+		create_character = {
+                        #巴顿
+			historical = yes
+			is_general = yes
+			first_name = Georges
+			last_name = Patton
+			culture = cu:dixie
+			birth_date = 1885.11.11
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			commander_rank = commander_rank_5
+			hq = region_the_midwest
+			traits = {
+				expert_offensive_planner
+				expert_artillery_commander
+                                wrathful                                                   
+			}
+		}
+		
+		create_character = {
+			is_general = yes
+			first_name = Omar
+			last_name = Bradley
+			age = 53
+			hq = region_pacific_coast
+			commander_rank = commander_rank_5
+			traits = {
+				reserved
+				stalwart_defender
+                                expert_defensive_strategist
+			}
+
+		}
+		
+		create_character = {
+			is_general = yes
+			first_name = Georges
+			last_name = Marshall
+			age = 66
+			hq = region_dixie
+			commander_rank = commander_rank_5
+			traits = {
+				traditionalist_commander
+				defense_in_depth_specialist
+                                resupply_commander
+                                                                  
+			}
+
+		}
+		
+		create_character = { # Sea
+                        #尼米兹
+			historical = yes
+			is_admiral = yes
+			first_name = Chester
+			last_name = William_Nimitz
+			culture = cu:yankee
+			birth_date = 1885.8.14
+			interest_group = ig_industrialists
+			ideology = ideology_moderate
+			hq = region_new_england
+			commander_rank = commander_rank_5
+			traits = {
+				expert_naval_commander
+				dockyard_master
+				direct
+				brave
+			}
+		}
+
+		create_character = { # USA, Admiral
+                        #艾姆斯·斯普鲁恩斯
+			historical = yes
+			is_admiral = yes
+			first_name = Raymond
+			last_name = Ames_Spruance
+			culture = cu:dixie
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			birth_date = 1886.7.3
+			commander_rank = commander_rank_5
+			hq = region_dixie
+			traits = {
+				meticulous
+				expert_naval_commander
+			}
+		}
+		
+		create_character = { # Sea
+                        #哈尔西
+			historical = yes
+			is_admiral = yes
+			first_name = William
+			last_name = Frederick_Halsey
+			culture = cu:yankee
+			birth_date = 1882.10.30
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			hq = region_dixie
+			commander_rank = commander_rank_5
+			traits = {
+				expert_naval_commander
+				charismatic
+				dockyard_master
+			                 popular_commander
+			}
+		}
+		
+		create_character = { # Sea
+                        #弗莱彻
+			historical = yes
+			is_admiral = yes
+			first_name = Frank
+			last_name = Jack_Fletcher
+			culture = cu:yankee
+			birth_date = 1885.4.19
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			hq = region_pacific_coast
+			commander_rank = commander_rank_5
+			traits = {
+				expert_naval_commander
+				ambitious
+				dockyard_master
+			}
+		}
+	}
+}

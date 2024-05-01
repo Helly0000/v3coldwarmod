@@ -1,0 +1,14 @@
+﻿l_simp_chinese:
+ modifier_building_group_bg_power_tax_mult:0 "发电厂税收"
+ modifier_building_group_bg_urban_facilities_tax_mult:0 "城镇设施税收"
+ modifier_building_group_bg_trade_tax_mult:0 "贸易税收"
+ modifier_building_group_bg_military_tax_mult:0 "军事税收"
+ modifier_building_group_bg_subsistence_agriculture_tax_mult:0 "自给农场税收"
+ modifier_building_group_bg_subsistence_ranching_tax_mult:0 "自给牧场税收"
+
+ modifier_building_group_bg_power_tax_mult_desc:0 "对发电厂税收的增益或惩罚"
+ modifier_building_group_bg_urban_facilities_tax_mult_desc:0 "对城镇设施税收的增益或惩罚"
+ modifier_building_group_bg_trade_tax_mult_desc:0 "对贸易中心税收的增益或惩罚"
+ modifier_building_group_bg_military_tax_mult_desc:0 "对军事建筑税收的增益或惩罚"
+ modifier_building_group_bg_subsistence_agriculture_tax_mult_desc:0 "对自给农场税收的增益或惩罚"
+ modifier_building_group_bg_subsistence_ranching_tax_mult_desc:0 "对自给牧场税收的增益或惩罚"

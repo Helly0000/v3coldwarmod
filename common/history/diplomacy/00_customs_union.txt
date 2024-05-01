@@ -1,0 +1,8 @@
+﻿DIPLOMACY = {
+	c:BEL = {	
+		create_diplomatic_pact = {
+			country = c:LUX
+			type = customs_union #关税同盟
+		}			
+	}
+}

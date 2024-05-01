@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:POL = {
+		create_character = {
+			#博莱斯瓦夫·贝鲁特
+			first_name = "Boleslaw"
+			last_name = "Beirut"
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			birth_date = 1919.10.26
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}		
+	}
+}

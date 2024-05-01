@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:BUL = {
+		create_character = {
+			#瓦西里·科拉罗夫
+			first_name = "Vasile"
+			last_name = "Kolarov"
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			birth_date = 1877.1.1
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}		
+	}
+}

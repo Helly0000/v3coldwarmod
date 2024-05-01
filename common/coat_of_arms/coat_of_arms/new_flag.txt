@@ -1,0 +1,38 @@
+PRC = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+
+	colored_emblem = {
+		texture = "ce_star_frame_hammer_sickle.dds"
+		color1 = white
+		color2 = white
+        instance = { scale = { 0.83 0.83 } position = { 0.5 0.475 }  }		
+	}	
+	colored_emblem = {
+		texture = "ce_hammer_and_sickle.dds"
+		color1 = black
+		color2 = black 
+        instance = { scale = { 0.385 0.385 } position = { 0.5 0.525 }  }
+	}
+}
+
+PRC_communist = {
+	
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	colored_emblem = {
+		texture = "ce_hammer_and_sickle_round.dds"
+		color1 = yellow
+		color2 = yellow 
+        instance = { scale = { 0.65 0.65 } position = { 0.5 0.525 }  }
+	}
+	colored_emblem = {
+		texture = "ce_star_05_hollow.dds"
+		color1 = yellow
+		color2 = yellow
+        instance = { scale = { 0.35 0.35 } position = { 0.21 0.25 }  }		
+	}	
+}

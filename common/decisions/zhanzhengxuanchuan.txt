@@ -1,0 +1,31 @@
+﻿war_propaganda_resolution = { #战争宣传
+	is_shown = {
+			is_ai = no
+		NOT = { 
+			has_modifier = war_propaganda
+		}
+	}
+	possible = {
+		has_technology_researched = war_propaganda #战争宣传
+		produced_bureaucracy > 100		
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = war_propaganda
+		}
+	}
+}
+
+cancel_war_propaganda = { #取消战争宣传
+	is_shown = {
+		has_modifier = war_propaganda
+	}
+	possible = {
+		has_technology_researched = war_propaganda #战争宣传
+	}
+	
+	when_taken = {
+		remove_modifier = war_propaganda
+	}
+}

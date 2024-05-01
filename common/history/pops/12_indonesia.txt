@@ -1,0 +1,71 @@
+POPS = {
+	s:STATE_MALAYA = {
+		region_state:SIA = {
+			create_pop = {
+				culture = malay
+				size = 248000
+			}
+			create_pop = {
+				culture = yue
+				size = 12800
+			}
+			create_pop = {
+				culture = yue
+				pop_type = slaves
+				size = 4000
+			}
+		}
+		region_state:GBR = {
+			create_pop = {
+				culture = malay
+				size = 2890000
+			}
+			create_pop = {
+				culture = tamil
+				size = 2000
+			}
+			create_pop = {
+				culture = british
+				size = 2196
+			}
+		}
+	}
+	s:STATE_SUNDA_ISLANDS = {
+		region_state:POR = {
+			create_pop = {
+				culture = melanesian
+				size = 40000
+			}
+			create_pop = {
+				culture = melanesian
+				religion = sunni
+				size = 20000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 196
+			}
+			create_pop = {
+				culture = moluccan
+				religion = animist
+				size = 16000
+			}
+			create_pop = {
+				culture = melanesian
+				religion = catholic
+				size = 8000
+			}
+			create_pop = {
+				culture = moluccan
+				religion = catholic
+				size = 3996
+			}
+		}
+		region_state:IDN = {
+			create_pop = {
+				culture = moluccan
+				size = 1800000
+			}
+		}
+	}
+	}

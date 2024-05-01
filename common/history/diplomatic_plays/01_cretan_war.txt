@@ -1,0 +1,22 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:TUR = {
+		create_diplomatic_play = {
+			name = cretan_war
+			
+			add_initiator_backers = { c:TUR }
+			add_target_backers = { c:VEN c:PAP }
+			
+			target_state = s:STATE_CRETE.region_state:VEN
+			
+			war = yes
+			
+			type = dp_conquer_state
+			
+			add_war_goal = {
+				holder = c:VEN
+				type = conquer_state
+				target_state = s:STATE_CRETE.region_state:B37
+			}
+		}			
+	}
+}

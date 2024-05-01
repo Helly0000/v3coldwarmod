@@ -1,0 +1,42 @@
+research_on_uranium_enrichment_technology = {
+
+	group = je_group_technology
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	is_shown_when_inactive = { #显示	
+		OR = { 
+			this = c:USA
+			this = c:RUS
+			this = c:FRA
+			this = c:PRC
+			this = c:CHI
+			this = c:CHN
+			this = c:GBR
+			this = c:BIC
+			this = c:PAN
+			this = c:KOR
+			this = c:ISR
+			this = c:JAP
+			this = c:GER
+			this = c:ARG
+			this = c:PER
+		}                
+	}
+
+	possible = { #激活条件
+		has_modifier = research_on_uranium_enrichment_technology #有研究铀浓缩技术修正
+		has_technology_researched = nuclear_energy_applications #核能应用						
+	}
+	complete = { #完成条件
+		game_date >= 1956.1.1
+	}
+
+                	
+    on_complete = {
+        add_technology_researched = uranium_enrichment
+	remove_modifier = research_on_uranium_enrichment_technology #取消研究铀浓缩技术修正
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

@@ -1,0 +1,14 @@
+attract_intellectuals = { #拉拢知识分子
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtaining_support_from_intellectuals } #没有获得知识分子支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtaining_support_from_intellectuals #获得知识分子支持
+			years = 5	
+		}
+	}
+}

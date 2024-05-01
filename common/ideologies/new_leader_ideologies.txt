@@ -1,0 +1,236 @@
+ideology_leaders_of_socialists_with_characteristics = { #特色社会主义者
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_communist.dds"
+	
+	character_ideology = yes
+
+	lawgroup_economic_system = {	
+		law_laissez_faire = strongly_approve
+		law_interventionism = approve
+		law_agrarianism = neutral
+		law_traditionalism = disapprove	
+		law_cooperative_ownership = approve
+		law_command_economy = neutral
+		law_industry_banned = strongly_disapprove
+	}
+
+	lawgroup_trade_policy = { #贸易政策		
+		law_protectionism = approve #贸易保护
+		law_mercantilism = disapprove #重商主义	
+		law_isolationism = strongly_disapprove #孤立主义
+		law_free_trade = strongly_approve #自由贸易
+	}
+
+	lawgroup_army_model = {
+		law_peasant_levies = neutral
+		law_professional_army = neutral
+		law_politicized_military = strongly_approve #政治化军队
+		law_national_militia = neutral
+		law_mass_conscription = neutral
+	}
+
+	lawgroup_labor_rights = {		
+		law_worker_protections = strongly_approve
+		law_regulatory_bodies = approve
+		law_no_workers_rights = neutral
+	}
+
+	lawgroup_distribution_of_power = {
+		law_multi_party_cooperation_system = strongly_approve
+		law_universal_suffrage = strongly_approve
+		law_census_voting = neutral
+		law_wealth_voting = disapprove
+		law_landed_voting = disapprove
+		law_anarchy = disapprove
+		law_technocracy = disapprove
+		law_oligarchy = strongly_disapprove
+		law_autocracy = strongly_disapprove	
+		law_single_party_state = strongly_approve	
+	}
+	
+	lawgroup_taxation = {
+		law_consumption_based_taxation = disapprove
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+		law_proportional_taxation = approve
+		law_graduated_taxation = strongly_approve
+	}
+
+	lawgroup_welfare = {
+		law_poor_laws = strongly_disapprove
+		law_no_social_security = strongly_disapprove
+		law_wage_subsidies = approve
+		law_old_age_pension = strongly_approve
+	}
+
+	possible = {
+		owner = { has_technology_researched = socialism }
+		# Agitator ideologies should disapprove of a current law
+		NAND = {
+			has_role = agitator
+			owner = {
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_graduated_taxation
+				has_law = law_type:law_old_age_pension
+				has_law = law_type:law_worker_protections
+			}
+		}
+		scope:interest_group = {
+			OR = {
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_armed_forces
+			}
+		}
+		scope:interest_group = {
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_conservatism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+	}
+	
+	leader_weight = {
+		value = 100
+		# very angry IG's more likely to turn to more radical socialism
+		if = {
+			limit = {
+				scope:interest_group = {
+					NOT = { is_interest_group_type = ig_devout } # can't be radical socialists
+					ig_approval <= -5
+				}
+			}
+			add = -75
+		}
+		# more likely when issues are relevant
+		if = {
+			limit = {
+				owner = {
+					NAND = {
+						has_law = law_type:law_graduated_taxation
+						has_law = law_type:law_universal_suffrage
+						has_law = law_type:law_worker_protections
+					}
+				}
+			}
+			add = 50
+		}
+		# more likely for content devout in council republic
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_devout
+					ig_approval >= 0
+				} 
+				owner = {
+					has_law = law_type:law_council_republic
+				}
+			}
+			add = 75
+		}
+		# more likely for content trade unions outside of council republic
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_trade_unions
+					ig_approval >= 0
+				}
+				owner = {
+					NOT = { has_law = law_type:law_council_republic }
+				}
+			}
+			add = 75
+		}
+		# extremely unlikely for trade unions in council republic
+		if = {
+			limit = {
+				scope:interest_group = {
+					is_interest_group_type = ig_trade_unions
+				}
+				owner = {
+					has_law = law_type:law_council_republic
+				}
+			}
+			multiply = 0.01
+		}
+		# liberal and/or radical leaders have a higher spawn chance if the Dreyfusards won.
+		if = {
+			limit = {
+				scope:interest_group = {
+					has_variable = dreyfusard_victory
+				}
+			}
+			add = 50
+		}
+	}
+}
+
+ideology_political_trainer = { #训政主义者
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_republican.dds"
+	
+	character_ideology = yes
+
+	lawgroup_governance_principles = {
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_monarchy = disapprove
+		law_theocracy = disapprove
+	}
+
+	lawgroup_distribution_of_power = {
+		law_oligarchy = approve
+		law_autocracy = approve
+		law_single_party_state = strongly_approve
+	}
+
+	lawgroup_free_speech = {
+		law_outlawed_dissent = approve #异议非法
+ 		law_censorship = strongly_approve #出版物审查
+ 		law_protected_speech = disapprove
+	}
+}
+
+ideology_three_peoples_principles = { #三民主义者
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_republican.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_governance_principles = {
+		law_presidential_republic = approve
+		law_parliamentary_republic = approve
+		law_monarchy = disapprove
+		law_theocracy = disapprove
+	}
+	
+	lawgroup_citizenship = { #公民权
+		law_multicultural = disapprove #文化多元
+		law_ethnostate = disapprove #民族国家
+		law_national_supremacy = disapprove #民族至上
+		law_racial_segregation = disapprove #种族隔离
+		law_cultural_exclusion = strongly_approve #文化排斥
+	}
+
+	lawgroup_distribution_of_power = { #权力分配
+		law_universal_suffrage = strongly_approve #普选制
+		law_census_voting = approve #资格性选举制
+		law_wealth_voting = approve #财产投票
+		law_landed_voting = approve #地产投票
+		law_oligarchy = disapprove #寡头制
+		law_autocracy = disapprove #独裁制
+	}
+
+	lawgroup_economic_system = { #经济体制
+		law_laissez_faire = disapprove #自由放任
+		law_interventionism = strongly_approve #经济干预
+	}
+
+	lawgroup_land_reform = { #土地改革
+		law_serfdom = disapprove #农奴制
+		law_tenant_farmers = disapprove #佃农
+		law_homesteading = strongly_approve #小农土地所有制
+	}
+}

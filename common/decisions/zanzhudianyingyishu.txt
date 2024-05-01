@@ -1,0 +1,38 @@
+﻿sponsoring_film_art = { #赞助电影艺术
+	is_shown = {
+			is_ai = no
+		NOT = { 
+			has_modifier = sponsoring_film_art
+		}
+	}
+	possible = {
+		has_technology_researched = film #电影
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 2
+				has_active_production_method = pm_film_art
+			}
+		}		
+		produced_bureaucracy > 100		
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = sponsoring_film_art
+		}
+	}
+}
+
+cancel_sponsorship_of_film_art = { #取消赞助电影艺术
+	is_shown = {
+		has_modifier = sponsoring_film_art
+	}
+	possible = {
+		has_technology_researched = film #电影
+	}
+	
+	when_taken = {
+		remove_modifier = sponsoring_film_art
+	}
+}

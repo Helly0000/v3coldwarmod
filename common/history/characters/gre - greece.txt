@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:GRE = {
+		create_character = {
+			#乔治二世
+			first_name = "George_II"
+			last_name = "Glücksburg"
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1890.7.20
+			dna = dna_king_otto_of_greece
+			culture = cu:south_german
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_royalist #保皇主义者
+			traits = {
+			}
+		}	
+	}
+}

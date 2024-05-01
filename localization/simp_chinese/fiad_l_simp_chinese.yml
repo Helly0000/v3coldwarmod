@@ -1,0 +1,38 @@
+﻿l_simp_chinese:
+ pmg_can_meterial: "罐头原料"
+ pm_no_meat_and_fish_can: "无罐头"
+ pm_fish_can: "鱼类包装"
+ pm_increased_fish_can: "规模化鱼类包装"
+ pm_meat_can: "肉类包装"
+ pm_increased_meat_can: "规模化肉类包装"
+ pm_mix_can: "鱼、肉混合包装"
+ pm_increased_mix_can: "规模化鱼、肉混合包装"
+
+ pm_vacuum_canning: "真空灌装"
+
+
+ building_distillery: "酿酒厂"
+
+ pmg_base_building_distillery: "$pm_base$"
+ pm_simple_stills: "简易蒸馏器"
+
+ pmg_grains_and_sugar: "谷物与糖"
+ pm_grain_distillation: "谷物酿酒"
+ pm_sugar_usage: "糖投入"
+ pm_increased_sugar_usage: "专注糖投入"
+ pm_maltose: "麦芽糖"
+ pm_increased_maltose: "专注麦芽糖"
+ pm_acidolysis: "酸解法"
+
+ pmg_automation_building_distillery: "自动化"
+ pm_manual_bottling: "手工装瓶"
+ pm_bottler: "装瓶机"
+ pm_automated_bottling: "自动化装瓶器"
+
+ pmg_ownership_capital_building_distillery: "$pmg_ownership$"
+ pm_merchant_guilds_building_distillery: "$pm_merchant_guilds$"
+ pm_privately_owned_building_distillery: "$pm_privately_owned$"
+ pm_publicly_traded_building_distillery: "$pm_publicly_traded$"
+ pm_government_run_building_distillery: "$pm_government_run$"
+ pm_worker_cooperative_building_distillery: "$pm_worker_cooperative$"
+

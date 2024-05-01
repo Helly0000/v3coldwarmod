@@ -1,0 +1,20 @@
+﻿improving_the_work_environment = { #改善工作环境
+	is_shown = {
+			is_ai = no
+		NOT = { 
+			has_modifier = improving_the_work_environment
+		}
+	}
+	possible = {
+		has_technology_researched = labor_movement #劳工运动	
+		NOT = { has_law = law_type:law_regulatory_bodies } #没有监管机构法律	
+		NOT = { has_law = law_type:law_worker_protections } #没有工人保障法律	
+		produced_bureaucracy > 100		
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = improving_the_work_environment
+		}
+	}
+}
