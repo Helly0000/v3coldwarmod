@@ -3,12 +3,12 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_dixie
-			name = "侦察军"
+			name = "正规陆军"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_TENNESSEE
-				count = 1
+				count = 16
 			}
 
 			combat_unit = {
@@ -16,17 +16,27 @@
 				state_region = s:STATE_SOUTH_CAROLINA
 				count = 1
 			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery #自行火炮
+				state_region = s:STATE_VIRGINIA
+				count = 9
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers #喷气战斗机
+				state_region = s:STATE_VIRGINIA
+				count = 8
+			}
 		}
 
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_new_england
-			name = "正规军"
+			name = "陆军后备队"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_NEW_YORK
-				count = 1
+				count = 12
 			}
 
 			combat_unit = {
@@ -58,171 +68,134 @@
 				state_region = s:STATE_NORTH_CAROLINA
 				count = 1
 			}
-
 			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
+				type = unit_type:combat_unit_type_mobile_artillery #自行火炮
 				state_region = s:STATE_VIRGINIA
-				count = 1
+				count = 9
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers #喷气战斗机
+				state_region = s:STATE_VIRGINIA
+				count = 8
 			}
 		}
 
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_dixie
-			name = "佛罗里达军团"
+			name = "国民警卫队"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_ALABAMA
-				count = 1
+				count = 17
 			}
-
 			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
+				type = unit_type:combat_unit_type_mobile_artillery #自行火炮
 				state_region = s:STATE_GEORGIA
-				count = 1
+				count = 9
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers #喷气战斗机
+				state_region = s:STATE_GEORGIA
+				count = 8
 			}
 		}
 
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_dixie
-			name = "戈斯波特舰队"
+			name = "大西洋舰队"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
+				type = unit_type:combat_unit_type_light_ship_2
 				state_region = s:STATE_VIRGINIA
-				count = 1
+				count = 13
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
+				type = unit_type:combat_unit_type_capital_ship_2
 				state_region = s:STATE_VIRGINIA
 				count = 3
+			}
+			combat_unit = { # Ahistorical
+				type = unit_type:combat_unit_type_carrier_1
+				state_region = s:STATE_NEW_YORK
+				count = 9
 			}
 		}
 
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_new_england
-			name = "纽约舰队"
+			name = "太平洋舰队"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
+				type = unit_type:combat_unit_type_light_ship_2
+				state_region = s:STATE_NEW_YORK
+				count = 13
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_capital_ship_2
 				state_region = s:STATE_NEW_YORK
 				count = 3
 			}
 
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_NEW_YORK
-				count = 2
-			}
-
 			combat_unit = { # Ahistorical
-				type = unit_type:combat_unit_type_frigate
+				type = unit_type:combat_unit_type_carrier_1
 				state_region = s:STATE_NEW_YORK
-				count = 2
+				count = 9
 			}
 		}
 
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_new_england
-			name = "波士顿舰队"
+			name = "欧洲舰队"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
+				type = unit_type:combat_unit_type_light_ship_2
 				state_region = s:STATE_MASSACHUSETTS
-				count = 1
+				count = 13
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
+				type = unit_type:combat_unit_type_capital_ship_2
 				state_region = s:STATE_MASSACHUSETTS
-				count = 1
+				count = 3
 			}
 
 			combat_unit = { # Ahistorical
-				type = unit_type:combat_unit_type_frigate
+				type = unit_type:combat_unit_type_carrier_1
 				state_region = s:STATE_MASSACHUSETTS
-				count = 1
+				count = 9
 			}
 		}
 
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_dixie
-			name = "地中海中队"
+			name = "海军预备队"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
+				type = unit_type:combat_unit_type_light_ship_2
 				state_region = s:STATE_MASSACHUSETTS
-				count = 1
+				count = 13
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
+				type = unit_type:combat_unit_type_capital_ship_2
 				state_region = s:STATE_MASSACHUSETTS
-				count = 2
+				count = 3
 			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_dixie
-			name = "西印度中队"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_SOUTH_CAROLINA
-				count = 1
-			}
-
 			combat_unit = { # Ahistorical
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_SOUTH_CAROLINA
-				count = 2
+				type = unit_type:combat_unit_type_carrier_1
+				state_region = s:STATE_MASSACHUSETTS
+				count = 9
 			}
 		}
 
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_dixie
-			name = "太平洋中队"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LOUISIANA
-				count = 1
-			}
-		}
-	}
-
-	c:TEX = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_dixie
-			name = "德克萨斯共和国陆军"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TEXAS
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_TEXAS
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TEXAS
-				count = 1
-			}
-		}
 	}
 
 	c:MEX = {

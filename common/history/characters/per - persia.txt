@@ -40,7 +40,7 @@
 			birth_date = 1900.5.17
 			culture = cu:persian
 			interest_group = ig_devout #虔信者
-			ideology = ideology_republican_leader #共和主义者
+			ideology = ideology_enlightened_theocrats #开明神权主义者
 			traits = {
 				    strong #健硕
 				    charismatic #魅力四射

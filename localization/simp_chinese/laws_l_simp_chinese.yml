@@ -1,5 +1,9 @@
 ﻿l_simp_chinese:
 #Leader Ideologies
+ ideology_distributism: "分产主义者"
+ ideology_distributism_desc: "#lore 这个领袖通过广泛的私有化和分散化生产资料来促进社会公正和减少不平等。#!"
+ ideology_enlightened_theocrats: "开明神权主义者"
+ ideology_enlightened_theocrats_desc: "#lore 这个领袖相信要由教会以教义和工会等保护公民权益的组织来促进社会公正和减少不平等。#!"
  ideology_democratic_socialism: "民主社会主义者"
  ideology_democratic_socialism_desc: "#lore 这个领袖被认为是反对无产阶级革命，鼓吹超阶级的国家观点，视混合经济为社会主义，主张以渐进的改良措施来达到社会主义。#!"
  ideology_moderate: "温和主义者"
@@ -518,17 +522,3 @@
  institution_migrate:0 "移民"
  institution_scientific_research_desc:0 "控制人口流动"
  modifier_country_institution_migrate_max_investment_add:0 "最大移民机构投入等级"
-
-###银行业
- lawgroup_Bank: "银行业"
- lawgroup_Bank_desc: "银行体系的基本构成"
- law_no_Bank: "无银行"
- law_no_Bank_desc: "我们的国家没有成体系的银行机构"
- law_Depository_Banks: "存款银行"
- law_Depository_Banks_desc: "一种原始的银行业，通过民间个体与商户的存款行为运行"
- law_Joint_stock_bank: "股份制银行"
- law_Joint_stock_bank_desc: "利用股份资本创建，由股份公司的形式组织起来的商业银行"
- law_Bank_State_owned: "中央银行"
- law_Bank_State_owned_desc: "中央银行是一个国家最高的货币金融管理机构，通过它，国家得以更好的管控金融业"
- law_Bank_State_owned_1: "独立央行"
- law_Bank_State_owned_1_desc: "中央银行独立于政府单独运作，在不受政治影响的情况下独立制定货币政策"

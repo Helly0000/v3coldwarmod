@@ -93,10 +93,9 @@
 			ideology = ideology_radical #激进主义者
 			traits = {
 				expert_offensive_planner #熟练的进攻策划师
-				basic_naval_commander #海军指挥官
+				celebrity_commander #明星指挥官
 				imperious #盛气凌人
 				bigoted #偏执
-				reckless #鲁莽
 			}
 		}
 

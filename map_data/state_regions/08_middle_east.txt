@@ -12,11 +12,8 @@
     arable_land = 50
     arable_resources = { bg_livestock_ranches }
     capped_resources = {
+	bg_oil_extraction = 280
         bg_fishing = 4
-    }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 60
     }
     naval_exit_id = 3046
 }
@@ -119,6 +116,7 @@ STATE_HAIL = {
     arable_land = 20
     arable_resources = { bg_livestock_ranches }
     capped_resources = {
+	bg_oil_extraction = 33
         bg_fishing = 2
     }
     naval_exit_id = 3046
@@ -241,6 +239,9 @@ STATE_BAGHDAD = {
     traits = { state_trait_mesopotamian_floodplain state_trait_tigris_river state_trait_euphrates_river }
     arable_land = 200
     arable_resources = { bg_rice_farms bg_livestock_ranches bg_silk_plantations bg_tobacco_plantations }
+    capped_resources = {
+	bg_oil_extraction = 32
+    }
     resource = {
         type = "bg_oil_extraction"
         undiscovered_amount = 40
@@ -259,6 +260,7 @@ STATE_MOSUL = {
     arable_land = 80
     arable_resources = { bg_wheat_farms bg_livestock_ranches bg_cotton_plantations }
     capped_resources = {
+	bg_oil_extraction = 24
         bg_sulfur_mining = 36
     }
     resource = {
@@ -293,12 +295,9 @@ STATE_BASRA = {
     arable_land = 200
     arable_resources = { bg_rice_farms bg_livestock_ranches bg_silk_plantations bg_tobacco_plantations }
     capped_resources = {
+	bg_oil_extraction = 70
         bg_sulfur_mining = 32
         bg_fishing = 6
-    }
-    resource = {
-        type = "bg_oil_extraction"
-        undiscovered_amount = 60
     }
     naval_exit_id = 3046
 }

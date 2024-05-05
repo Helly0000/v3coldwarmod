@@ -331,6 +331,10 @@ POPS = {
 				culture = muskogean
 				size = 8000
 			}
+			create_pop = {
+				culture = caribeno
+				size = 8000
+			}
 		}
 	}
 	s:STATE_GEORGIA = {

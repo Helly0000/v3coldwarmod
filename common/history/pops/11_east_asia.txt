@@ -635,7 +635,32 @@ POPS = {
 		region_state:CHI = {
 			create_pop = {
 				culture = han
-				size = 4590000
+				religion = mahayana
+				size = 3075300
+			}
+			create_pop = {
+				culture = han
+				size = 1101600
+			}
+			create_pop = {
+				culture = han
+				religion = protestant
+				size = 275400
+			}
+			create_pop = {
+				culture = han
+				religion = catholic
+				size = 45900
+			}
+			create_pop = {
+				culture = han
+				religion = jewish
+				size = 45900
+			}
+			create_pop = {
+				culture = han
+				religion = sunni
+				size = 45900
 			}
 		}
 	}

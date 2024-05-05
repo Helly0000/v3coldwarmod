@@ -107,7 +107,7 @@ building_oil_rig = {
     }
 
 	unlocking_technologies = {
-		pumpjacks
+		shaft_mining
 	}
 
 	production_method_groups = {

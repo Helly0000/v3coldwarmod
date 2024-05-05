@@ -694,526 +694,96 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_england
-			name = "禁卫军"
+			name = "正规军"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_MIDLANDS
-				count = 3
+				count = 12
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
+				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_MIDLANDS
-				count = 2
+				count = 6
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_MIDLANDS
-				count = 1
+				count = 6
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_england
+			name = "本土军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_MIDLANDS
+				count = 12
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_MIDLANDS
+				count = 6
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_MIDLANDS
+				count = 6
 			}
 		}
 
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_north_sea_coast
-			name = "爱尔兰军团"
+			name = "联合部队"
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_ULSTER
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LEINSTER
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_HIGHLANDS
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_MUNSTER
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_CONNAUGHT
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_CONNAUGHT
-				count = 1
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_england
-			name = "国民军"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_EAST_ANGLIA
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_WEST_COUNTRY
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_WALES
-				count = 1
-			}
-			
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANCASHIRE
-				count = 1
-			}
-			
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LOWLANDS
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_WEST_COUNTRY
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_LOWLANDS
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_LANCASHIRE
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_LANCASHIRE
-				count = 3
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_italy
-			name = "地中海军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_EAST_ANGLIA
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_YORKSHIRE
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_YORKSHIRE
-				count = 1
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_caribbean
-			name = "西印度军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_WALES
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANCASHIRE
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANCASHIRE
-				count = 4
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_zanj
-			name = "好望角军团" # Includes Sierra Leone regiment
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LOWLANDS
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
 				state_region = s:STATE_MIDLANDS
-				count = 1
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_canada
-			name = "加拿大军团" # Includes Sierra Leone regiment
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_YORKSHIRE
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_ULSTER
-				count = 6
+				count = 12
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_ULSTER
-				count = 1
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_south_india
-			name = "印度军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANCASHIRE
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_HOME_COUNTIES
-				count = 13
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LEINSTER
-				count = 9
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_LEINSTER
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_indochina
-			name = "澳大利亚军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_HIGHLANDS
-				count = 5
-			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_england
-			name = "朴次茅斯舰队"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_WEST_COUNTRY
-				count = 30
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LANCASHIRE
-				count = 24
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ULSTER
-				count = 2
-			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_england
-			name = "普利茅斯舰队"
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_EAST_ANGLIA
-				count = 27
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_YORKSHIRE
-				count = 19
-			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_england
-			name = "施尔尼斯舰队"
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_HOME_COUNTIES
-				count = 23
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LANCASHIRE
-				count = 16
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ULSTER
-				count = 2
-			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_italy
-			name = "地中海舰队"
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_HOME_COUNTIES
-				count = 7
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MALTA
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_YORKSHIRE
-				count = 5
-			}
-
-			save_scope_as = med_fleet_gbr
-		}
-
-		create_character = { # Sea
-			is_admiral = yes
-			first_name = Thomas
-			last_name = Cochrane
-			historical = yes
-			hq = region_italy
-			age = 61
-			traits = {
-				reckless
-				expert_naval_commander
-				expert_convoy_raider
-			}
-			save_scope_as = thomas_adm
-		}
-
-		scope:thomas_adm = {
-			transfer_to_formation = scope:med_fleet_gbr
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_new_england
-			name = "北美与西印度舰队"
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_BERMUDA
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_HOME_COUNTIES
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_JAMAICA
-				count = 2
-			}
-
-			save_scope_as = north_amer_fleet
-		}
-
-		create_character = { # Sea
-			is_admiral = yes
-			first_name = James
-			last_name = Dundas
-			historical = yes
-			age = 51
-			hq = region_iberia
-			traits = {
-				cautious
-			}
-			save_scope_as = james_adm
-		}
-
-		scope:james_adm = {
-			transfer_to_formation = scope:north_amer_fleet
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_south_india
-			name = "东印度与中国舰队" # Includes the 1 frigate of the Australia Station too
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_LOWLANDS
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MALAYA
-				count = 6
-			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_iberia
-			name = "里斯本舰队"
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
 				state_region = s:STATE_MIDLANDS
 				count = 6
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LOWLANDS
-				count = 2
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_MIDLANDS
+				count = 5
 			}
 		}
 
 		create_military_formation = {
 			type = fleet
-			hq_region = sr:region_la_plata
-			name = "南美舰队"
+			hq_region = sr:region_england
+			name = "英国皇家海军"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LEINSTER
+				type = unit_type:combat_unit_type_light_ship_2
+				state_region = s:STATE_WEST_COUNTRY
+				count = 12
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_capital_ship_2
+				state_region = s:STATE_LANCASHIRE
+				count = 5
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_carrier_1
+				state_region = s:STATE_ULSTER
 				count = 6
-			}
-
-			save_scope_as = south_america_fleet
-		}
-
-		create_character = { # Sea
-			is_admiral = yes
-			first_name = Sir_George
-			last_name = Cockburn
-			historical = yes
-			age = 64
-			hq = region_new_england
-			traits = {
-				innovative
-			}
-			save_scope_as = cockburn_adm
-			# Burnt down washington
-		}
-
-		scope:cockburn_adm = {
-			transfer_to_formation = scope:south_america_fleet
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_zanj
-			name = "好望角舰队"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_MUNSTER
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_MUNSTER
-				count = 1
 			}
 		}
 	}
@@ -1221,198 +791,24 @@
 	c:RUS = {
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_baltic
-			name = "近卫军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SMOLENSK
-				count = 12
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ORSHA
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_NOVGOROD
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_ESTONIA
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_LITHUANIA
-				count = 3
-			}
-		}
-
-		create_military_formation = {
-			type = army
 			hq_region = sr:region_russia
-			name = "独立掷弹兵军团"
+			name = "俄罗斯第一方面军"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_BRYANSK
-				count = 25
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_BREST
+				count = 21
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_MOSCOW
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_VOLHYNIA
 				count = 10
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_MOSCOW
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_MOSCOW
-				count = 5
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_russia
-			name = "第一步兵军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KURSK
-				count = 20
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LUHANSK
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_TARTARIA
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TARTARIA
-				count = 5
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_russia
-			name = "第二步兵军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KAZAN
-				count = 20
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_TVER
-				count = 15
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_GALICH
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_GALICH
-				count = 5
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_dnieper
-			name = "第三步兵军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_KIEV
-				count = 20
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LUHANSK
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_TARTARIA
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TARTARIA
-				count = 5
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_caucasus
-			name = "独立高加索军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_ROSTOV
-				count = 10
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_SAMARA
-				count = 20
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_GREATER_CAUCASUS
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_GREATER_CAUCASUS
-				count = 5
-			}
-		}
-
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_west_siberia
-			name = "第四步兵军团"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_PERM
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_VOLHYNIA
 				count = 10
 			}
 		}
@@ -1420,132 +816,70 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_poland
-			name = "第六步兵军团"
+			name = "白俄罗斯第一方面军"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_skirmish_infantry
 				state_region = s:STATE_BREST
+				count = 21
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_VOLHYNIA
 				count = 10
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
+				type = unit_type:combat_unit_type_cuirassiers
 				state_region = s:STATE_VOLHYNIA
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_VOLHYNIA
-				count = 4
+				count = 10
 			}
 		}
 
 		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_baltic
-			name = "波罗的海舰队"
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_INGRIA
-				count = 12
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_ESTONIA
-				count = 11
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_LATVIA
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_INGRIA
-				count = 8
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ESTONIA
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LATVIA
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ARKHANGELSK
-				count = 1
-			}
-		}
-
-		create_military_formation = {
-			type = fleet
+			type = army
 			hq_region = sr:region_dnieper
-			name = "黑海舰队"
+			name = "乌克兰第一方面军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_BREST
+				count = 21
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_VOLHYNIA
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers
+				state_region = s:STATE_VOLHYNIA
+				count = 10
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_russia
+			name = "苏联海军"
 		
 			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_CHERSON
-				count = 6
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_ROSTOV
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_man_o_war
-				state_region = s:STATE_CRIMEA
+				type = unit_type:combat_unit_type_light_ship_2
+				state_region = s:STATE_OKHOTSK
 				count = 5
 			}
-
 			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CHERSON
-				count = 7
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_CRIMEA
-				count = 7
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_ROSTOV
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_LUHANSK
-				count = 1
-			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_east_siberia
-			name = "鄂霍茨克区舰队"
-		
-			combat_unit = {
-				type = unit_type:combat_unit_type_frigate
+				type = unit_type:combat_unit_type_capital_ship_2
 				state_region = s:STATE_OKHOTSK
-				count = 1
+				count = 2
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_carrier_1
+				state_region = s:STATE_OKHOTSK
+				count = 3
 			}
 		}
 	}

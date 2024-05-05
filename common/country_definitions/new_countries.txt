@@ -1,4 +1,15 @@
-﻿SIK = {
+﻿RUS = {
+	color = { 47 91 18 }
+	religion = atheist
+	country_type = recognized
+
+	tier = empire
+	
+	cultures = { russian ukrainian byelorussian }
+	capital = STATE_MOSCOW
+}
+
+SIK = {
 	color = { 139  138  160 }
 	
 	country_type = unrecognized
@@ -30,18 +41,6 @@ PER = {
 	
 	cultures = { persian azerbaijani }
 	capital = STATE_IRAKAJEMI
-}
-
-# 泰国
-THA = {
-	color = { 89  138  173 }
-    
-        country_type = unrecognized
-    
-        tier = kingdom # 专制君主
-    
-	cultures = { thai malay }
-	capital = STATE_BANGKOK
 }
 
 CHN = { #中国

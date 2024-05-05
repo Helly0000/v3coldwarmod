@@ -23,7 +23,7 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom_banned
   		activate_law = law_type:law_proportional_taxation #比例税制
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_national_militia #国家民兵
 		activate_law = law_type:law_local_police #地方警察部队
             	activate_law = law_type:law_public_health_insurance
             	activate_law = law_type:law_womens_suffrage

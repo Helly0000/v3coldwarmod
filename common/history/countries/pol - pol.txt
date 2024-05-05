@@ -8,7 +8,7 @@
  		activate_law = law_type:law_compulsory_primary_school
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_continental_law_system #大陆法系
-		activate_law = law_type:law_collectivized_agriculture #集体化农业
+		activate_law = law_type:law_homesteading #小农土地所有制
 		activate_law = law_type:law_universal_suffrage #普选制
 		activate_law = law_type:law_womens_suffrage
 		activate_law = law_type:law_graduated_taxation #累进税制

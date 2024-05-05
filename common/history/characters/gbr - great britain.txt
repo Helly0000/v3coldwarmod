@@ -1,6 +1,7 @@
 ﻿CHARACTERS = {
 	c:GBR = {
 		create_character = {
+			historical = yes
 			first_name = George_VI
 			last_name = Winsdor
 			ruler = yes
@@ -17,7 +18,20 @@
 			}
 		}	
 	
+		create_character = { 
+			is_general = yes
+			interest_group = ig_trade_unions
+			commander_rank = commander_rank_5
+		}
+
+		create_character = { 
+			is_general = yes
+			interest_group = ig_trade_unions
+			commander_rank = commander_rank_5
+		}
+
 		create_character = {
+			historical = yes
 			first_name = Elizabeth_Mary
 			last_name = Winsdor
 			heir = yes
@@ -36,6 +50,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			first_name = Clement_Richard
 			last_name = Attlee
 			age = 53
@@ -49,6 +64,7 @@
 		}
 
 		create_character = {
+			historical = yes
 		                 first_name = Winston
 		     last_name = Churchill
 		    culture = cu:british
@@ -68,6 +84,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			first_name = Geoffrey_Francis
 			last_name = Fisher
 			age = 59
@@ -81,6 +98,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			first_name = Harry
 			last_name = Pollitt
 			age = 56
@@ -93,11 +111,13 @@
 			}
 		}
 
-		create_character = {
+		create_character = { #伯纳德·劳·蒙哥马利
+			historical = yes
 			is_general = yes
+			culture = cu:irish
 			first_name =Bernard
 			last_name = Montgomery
-			age = 59
+			birth_date = 1887.11.17
 			ig_leader = yes
 			interest_group = ig_armed_forces
 			ideology = ideology_moderate
@@ -112,6 +132,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			first_name = Rab
 			last_name = Butler
 			age = 44
@@ -125,6 +146,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			first_name = Maxwell_Fyfe
 			last_name = David
 			birth_date = 1900.5.29
@@ -138,6 +160,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			first_name = Derick_Heathcoat
 			last_name = Amory
 			age = 47
@@ -150,22 +173,7 @@
 		}
 
 		create_character = { # Sea
-			is_admiral = yes
-			first_name = Andrew
-			last_name = Cunningham
-			interest_group = ig_intelligentsia
-			hq = region_nile_basin
-			commander_rank = commander_rank_5
-			age = 53
-			traits = {
-				expert_offensive_planner
-				expert_naval_commander
-				expert_convoy_raider
-			}
-                                                   #安德鲁·坎宁安，皇家海军元帅，地中海舰队司令，塔兰托海战以一敌三大胜，被誉为”地中海之狮“
-		}
-
-		create_character = { # Sea
+			historical = yes
 			is_admiral = yes
 			first_name = John
 			last_name = Tovey
@@ -182,6 +190,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			is_general = yes
 			first_name = Louis
 			last_name = Mountbatten
@@ -198,6 +207,7 @@
 		}
 
 		create_character = { # Sea
+			historical = yes
 			is_admiral = yes
 			first_name = Sir_James
 			last_name = Somerville
@@ -214,6 +224,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			is_general = yes
 			first_name = Harold
 			last_name = Alexander
@@ -231,6 +242,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			is_general = yes
 			first_name = Archibald
 			last_name = Wavell
@@ -248,6 +260,7 @@
 		}
 
 		create_character = {
+			historical = yes
 			is_general = yes
 			first_name = William
 			last_name = Platt
@@ -264,6 +277,7 @@
 		}
 
 		create_character = { # Sea
+			historical = yes
 			is_admiral = yes
 			first_name = Charles
 			last_name = Morton_Forbes
@@ -280,6 +294,7 @@
 		}
 
 		create_character = { 
+			historical = yes
 			is_admiral = yes
 			first_name = Henry
 			last_name = Maitland_Wilson
@@ -294,23 +309,6 @@
 				wrathful
 			}
 
-		}
-
-		create_character = { 
-                                                   #马岛战争英军指挥官,因指挥若定被誉为"撒切尔夫人的骑士".此时正在新加坡服役
-			is_admiral = yes
-			first_name = Leach
-			last_name = Henry_Conyers
-			interest_group = ig_armed_forces
-			ideology = ideology_moderate
-			birth_date = 1923.11.18
-			hq = region_indonesia
-			commander_rank = commander_rank_1
-			traits = {
-				brave
-				basic_naval_commander
-                                                                    charismatic
-			}
 		}
 	}
 }

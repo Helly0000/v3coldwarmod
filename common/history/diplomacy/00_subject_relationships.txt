@@ -2,31 +2,31 @@
 	c:RUS = { #华约
 		create_diplomatic_pact = {
 			country = c:MGL
-			type = protectorate #保护国
+			type = dominion #自治领
 		}
 		create_diplomatic_pact = {
 			country = c:POL
-			type = protectorate #保护国
+			type = dominion #自治领
 		}	
 		create_diplomatic_pact = {
 			country = c:CZH
-			type = protectorate #保护国
+			type = dominion #自治领
 		}
 		create_diplomatic_pact = {
 			country = c:HUN
-			type = protectorate #保护国
+			type = dominion #自治领
 		}
 		create_diplomatic_pact = {
 			country = c:ROM
-			type = protectorate #保护国
+			type = dominion #自治领
 		}	
 		create_diplomatic_pact = {
 			country = c:BUL
-			type = protectorate #保护国
+			type = dominion #自治领
 		}
 		create_diplomatic_pact = {
 			country = c:ALB
-			type = protectorate #保护国
+			type = dominion #自治领
 		}
 	}
 	c:SPA = {
@@ -44,12 +44,6 @@
 			country = c:TIB
 			type = dominion #自治领
 		}			
-	}
-	c:USA = {
-		create_diplomatic_pact = {
-			country = c:JAP #日本
-			type = protectorate #保护国
-		}
 	}
 	c:GBR = {
 		create_diplomatic_pact = {

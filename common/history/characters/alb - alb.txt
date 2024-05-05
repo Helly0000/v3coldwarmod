@@ -2,6 +2,7 @@
 	c:ALB = {
 		create_character = {
 			#恩维尔·霍查
+			historical = yes
 			is_general = yes
 			commander_rank = commander_rank_ruler
 			first_name = "Enver"

@@ -11,6 +11,7 @@
     arable_land = 250
     arable_resources = { bg_rye_farms bg_livestock_ranches bg_sugar_plantations }
     capped_resources = {
+	bg_oil_extraction = 24
         bg_coal_mining = 90
         bg_iron_mining = 100
         bg_lead_mining = 150
@@ -89,6 +90,7 @@ STATE_OB = {
     arable_land = 200
     arable_resources = { bg_livestock_ranches }
     capped_resources = {
+	bg_oil_extraction = 21
         bg_coal_mining = 40
         bg_logging = 23
         bg_fishing = 11

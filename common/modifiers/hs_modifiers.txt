@@ -1,3 +1,113 @@
+agricultural_adjustment_act = { #农业调整法案
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_tax_collection_mult = -0.01 #税收
+	interest_group_ig_rural_folk_pop_attraction_mult = -0.75 #农民人群吸引力
+	building_group_bg_agriculture_throughput_add = 0.05 #农业吞吐量
+	state_poor_standard_of_living_add = 1 #下等阶层的生活水平
+}
+
+Roosevelt's_New_Deal = { #罗斯福新政
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_capitalists_pol_str_mult = -0.05 #资本家政治力量
+	country_laborers_pol_str_mult = 0.75 #劳工政治力量
+	country_legitimacy_base_add = 10 #政权合法性
+	state_loyalists_from_sol_change_mult = 0.1 #生活水平提高带来的效忠派
+	state_radicals_from_sol_change_mult = -0.1
+}
+
+the_peoples_army = { #毛泽东思想武装的人民军队
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_conscription_rate_mult = 0.05 #可征召营队（百分比）
+	unit_offense_mult = 0.25 #进攻
+	unit_defense_mult = 0.25 #防御
+}
+
+military_science_assistance_from_the_united_states = { #来自美国的军科援助
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	country_military_tech_research_speed_mult = 0.1
+}
+
+injuries_from_the_anti_japanese_war_in_the_rear_of_the_enemy = { #敌后抗日之殇
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_offense_mult = -0.1 #进攻
+	unit_defense_mult = -0.1 #防御
+}
+
+anti_japanese_injury = { #正面抗日之殇
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_offense_mult = -0.15 #进攻
+	unit_defense_mult = -0.15 #防御
+}
+
+ununified_china = { #未统一的中国
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_prestige_add = -50
+}
+
+the_peoples_liberation_army_controls_half_of_the_country = { #解放军掌握半壁江山
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_prestige_add = -230
+}
+
+stalinism = { #斯大林主义
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_authority_mult = 0.2
+	state_radicals_from_discrimination_mult = 0.1
+}
+
+the_voice_of_the_people = { #人民之声
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_loyalists_from_sol_change_mult = 1
+}
+oppose_the_central_committee = { #反对中央
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	interest_group_in_opposition_approval_add = -5
+}
+
+the_birthplace_of_revolution = { #革命始源地
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_trade_unions_pol_str_mult = 0.75
+	country_legitimacy_ideological_incoherence_mult = -0.05
+}
+
+the_fourth_five_year_plan = { #四五计划
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	building_throughput_mult = 0.05
+	state_construction_mult = 0.05
+}
+
+politicized_military = { #政治化的军队
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_army_defense_mult = 0.03
+	country_legitimacy_ideological_incoherence_mult = -0.01
+	country_military_goods_cost_mult = 0.25
+}
+
+a_divided_leadership_team = { #分裂的领导班子
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_mult = -0.05
+}
+
+russo_chinese.5.t = { #马林科夫的演说
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_trade_unions_pol_str_mult = 0.1
+}
+
+russo_chinese.6.t = { #赫鲁晓夫的演说
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_intelligentsia_pol_str_mult = 0.1
+}
+
+russo_chinese.7.t = { #贝利亚的演说
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_rural_folk_pol_str_mult = 0.1
+}
+
+russo_chinese.8.t = { #朱可夫的演说
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_armed_forces_pol_str_mult = 0.1
+}
+
 land_reform = { #土地改革
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	interest_group_ig_landowners_pol_str_mult = -0.5
@@ -5,8 +115,6 @@ land_reform = { #土地改革
 
 absolute_economic_hegemony = { #绝对经济霸权
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	country_prestige_add = 100 #国家威望
-	country_expenses_add = 1000
 }
 
 banquet = { #宴会

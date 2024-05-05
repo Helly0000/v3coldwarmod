@@ -15,12 +15,12 @@ COUNTRIES = {
 		activate_law = law_type:law_council_republic #社会主义共和制
 		activate_law = law_type:law_multi_party_cooperation_system #一党制国家
 		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_graduated_taxation #累进税制
 		activate_law = law_type:law_homesteading #小农土地所有制
 		activate_law = law_type:law_state_led #科学院主导
  		activate_law = law_type:law_compulsory_primary_school
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_womens_suffrage
-		activate_law = law_type:law_proportional_taxation
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_cultural_exclusion #文化排斥
 		activate_law = law_type:law_protectionism
@@ -31,9 +31,10 @@ COUNTRIES = {
 		activate_law = law_type:law_censorship #出版物审查
 		activate_law = law_type:law_secret_police
 		activate_law = law_type:law_public_health_insurance
-		activate_law = law_type:law_10_hour_working_system
+		activate_law = law_type:law_12_hour_working_system
 		activate_law = law_type:law_wage_subsidies #工资补贴
 		activate_law = law_type:law_migration_controls #移民控制
+
 
 		set_institution_investment_level = {
 			institution = institution_national_defense
@@ -82,12 +83,6 @@ COUNTRIES = {
 		}
 		add_modifier = {
 			name = the_peoples_army #人民的军队
-		}
-		add_modifier = {
-			name = injuries_from_the_anti_japanese_war_in_the_rear_of_the_enemy #敌后抗日之伤
-		}
-		add_modifier = {
-			name = ununified_china #未统一的中国
 		}
 	}
 }

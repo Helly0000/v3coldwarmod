@@ -22,7 +22,7 @@ law_encourage_fertility = { #鼓励抚育
 
 	institution = institution_family_planning	
 	institution_modifier = {
-		state_accepted_birth_rate_mult = 0.05 #已接纳人群的出生率（百分比）
+		state_birth_rate_mult = 0.05
 	}
 
 }

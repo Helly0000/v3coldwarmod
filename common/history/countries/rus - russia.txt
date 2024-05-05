@@ -9,7 +9,6 @@
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_10_hour_working_system
 		activate_law = law_type:law_state_led #科学院主导
-		activate_law = law_type:law_Bank_State_owned #中央银行
 		activate_law = law_type:law_continental_law_system #大陆法系
 		activate_law = law_type:law_collectivized_agriculture #集体化农业
 		activate_law = law_type:law_worker_protections #工人保障

@@ -5,17 +5,17 @@
 		
 		# Laws 
 		activate_law = law_type:law_council_republic
+		activate_law = law_type:law_multi_party_cooperation_system #一党制国家
+		activate_law = law_type:law_laissez_faire #自由放任
  		activate_law = law_type:law_compulsory_primary_school
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_continental_law_system #大陆法系
-		activate_law = law_type:law_collectivized_agriculture #集体化农业
-		activate_law = law_type:law_oligarchy #寡头制
+		activate_law = law_type:law_homesteading #小农土地所有制
 		activate_law = law_type:law_womens_suffrage
 		activate_law = law_type:law_graduated_taxation #累进税制
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_cultural_exclusion #文化排斥
 		activate_law = law_type:law_protectionism
-		activate_law = law_type:law_command_economy
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_dedicated_police
 		activate_law = law_type:law_professional_army
